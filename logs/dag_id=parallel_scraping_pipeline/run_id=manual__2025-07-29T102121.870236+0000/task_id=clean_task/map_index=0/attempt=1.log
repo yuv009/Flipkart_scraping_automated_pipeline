@@ -1,0 +1,25 @@
+[2025-07-29T10:45:17.647+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T10:45:18.922+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-29T10:21:21.870236+00:00 map_index=0 [queued]>
+[2025-07-29T10:45:19.539+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-29T10:21:21.870236+00:00 map_index=0 [queued]>
+[2025-07-29T10:45:19.547+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-29T10:45:20.192+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): clean_task> on 2025-07-29 10:21:21.870236+00:00
+[2025-07-29T10:45:20.257+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_scraping_pipeline', 'clean_task', 'manual__2025-07-29T10:21:21.870236+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmp4n70sil7', '--map-index', '0']
+[2025-07-29T10:45:20.266+0000] {standard_task_runner.py:91} INFO - Job 96: Subtask clean_task
+[2025-07-29T10:45:20.267+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2669) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T10:45:20.271+0000] {standard_task_runner.py:64} INFO - Started process 2687 to run task
+[2025-07-29T10:45:21.261+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T10:45:23.553+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-29T10:21:21.870236+00:00 map_index=0 [running]> on host f328c07fe88e
+[2025-07-29T10:45:29.240+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='clean_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T10:21:21.870236+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T10:21:21.870236+00:00'
+[2025-07-29T10:45:29.247+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-29T10:45:29.296+0000] {logging_mixin.py:188} INFO - Processing 209 reviews from Samsung_Galaxy_S24_FE_5G_(Blue,_128_GB)__(8_GB_RAM)_reviews.csv...
+[2025-07-29T10:45:29.617+0000] {logging_mixin.py:188} INFO - 
+🗑️ Removed 16 duplicate reviews based on Review_ID.
+[2025-07-29T10:45:29.704+0000] {logging_mixin.py:188} INFO - 
+📁 Clean data saved: /opt/airflow/data/cleaned/Samsung_Galaxy_S24_FE_5G_(Blue,_128_GB)__(8_GB_RAM)_reviews_CLEANED.csv
+[2025-07-29T10:45:29.706+0000] {logging_mixin.py:188} INFO - 📊 Final shape: (193, 10)
+[2025-07-29T10:45:29.709+0000] {python.py:237} INFO - Done. Returned value was: /opt/airflow/data/cleaned/Samsung_Galaxy_S24_FE_5G_(Blue,_128_GB)__(8_GB_RAM)_reviews_CLEANED.csv
+[2025-07-29T10:45:29.711+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-29T10:45:31.467+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=parallel_scraping_pipeline, task_id=clean_task, run_id=manual__2025-07-29T10:21:21.870236+00:00, map_index=0, execution_date=20250729T102121, start_date=20250729T104518, end_date=20250729T104531
+[2025-07-29T10:45:34.390+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-29T10:45:38.486+0000] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2025-07-29T10:45:38.552+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

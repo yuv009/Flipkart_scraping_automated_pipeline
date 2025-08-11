@@ -1,0 +1,23 @@
+[2025-07-27T13:13:31.587+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T13:13:31.636+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T13:11:48.427324+00:00 map_index=0 [queued]>
+[2025-07-27T13:13:31.650+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T13:11:48.427324+00:00 map_index=0 [queued]>
+[2025-07-27T13:13:31.651+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T13:13:31.669+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): clean_task> on 2025-07-27 13:11:48.427324+00:00
+[2025-07-27T13:13:31.684+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'parallel_scraping_pipeline', 'clean_task', 'manual__2025-07-27T13:11:48.427324+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmpks2x0tq2', '--map-index', '0']
+[2025-07-27T13:13:31.684+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=990) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T13:13:31.686+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask clean_task
+[2025-07-27T13:13:31.686+0000] {standard_task_runner.py:64} INFO - Started process 992 to run task
+[2025-07-27T13:13:31.708+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T13:13:31.793+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T13:11:48.427324+00:00 map_index=0 [running]> on host 9465eee47a4f
+[2025-07-27T13:13:31.933+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='clean_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T13:11:48.427324+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-27T13:11:48.427324+00:00'
+[2025-07-27T13:13:31.936+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T13:13:31.956+0000] {logging_mixin.py:188} INFO - Processing 99 reviews from OPPO_Reno14_5G_(Forest_Green,_256_GB)__(8_GB_RAM)_reviews.csv...
+[2025-07-27T13:13:32.021+0000] {logging_mixin.py:188} INFO - 
+📁 Clean data saved: /opt/***/data/cleaned/OPPO_Reno14_5G_(Forest_Green,_256_GB)__(8_GB_RAM)_reviews_CLEANED.csv
+[2025-07-27T13:13:32.022+0000] {logging_mixin.py:188} INFO - 📊 Final shape: (99, 10)
+[2025-07-27T13:13:32.023+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/cleaned/OPPO_Reno14_5G_(Forest_Green,_256_GB)__(8_GB_RAM)_reviews_CLEANED.csv
+[2025-07-27T13:13:32.024+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T13:13:32.057+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=parallel_scraping_pipeline, task_id=clean_task, run_id=manual__2025-07-27T13:11:48.427324+00:00, map_index=0, execution_date=20250727T131148, start_date=20250727T131331, end_date=20250727T131332
+[2025-07-27T13:13:32.105+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T13:13:32.189+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T13:13:32.191+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

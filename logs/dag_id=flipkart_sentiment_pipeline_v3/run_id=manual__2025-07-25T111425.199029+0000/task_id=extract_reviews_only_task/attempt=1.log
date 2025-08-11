@@ -1,0 +1,24 @@
+[2025-07-25T11:15:22.609+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-25T11:15:22.738+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: flipkart_sentiment_pipeline_v3.extract_reviews_only_task manual__2025-07-25T11:14:25.199029+00:00 [queued]>
+[2025-07-25T11:15:22.801+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: flipkart_sentiment_pipeline_v3.extract_reviews_only_task manual__2025-07-25T11:14:25.199029+00:00 [queued]>
+[2025-07-25T11:15:22.805+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-25T11:15:22.998+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): extract_reviews_only_task> on 2025-07-25 11:14:25.199029+00:00
+[2025-07-25T11:15:23.100+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1955) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-07-25T11:15:23.109+0000] {standard_task_runner.py:64} INFO - Started process 1965 to run task
+[2025-07-25T11:15:23.117+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'flipkart_sentiment_pipeline_v3', 'extract_reviews_only_task', 'manual__2025-07-25T11:14:25.199029+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/sentiment_pipeline_dag.py', '--cfg-path', '/tmp/tmpcfrplphr']
+[2025-07-25T11:15:23.127+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask extract_reviews_only_task
+[2025-07-25T11:15:23.230+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-07-25T11:15:23.656+0000] {task_command.py:426} INFO - Running <TaskInstance: flipkart_sentiment_pipeline_v3.extract_reviews_only_task manual__2025-07-25T11:14:25.199029+00:00 [running]> on host fb07c225d43f
+[2025-07-25T11:15:24.730+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='flipkart_sentiment_pipeline_v3' AIRFLOW_CTX_TASK_ID='extract_reviews_only_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-25T11:14:25.199029+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-25T11:14:25.199029+00:00'
+[2025-07-25T11:15:24.749+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-25T11:15:24.755+0000] {logging_mixin.py:188} INFO - Cleaning failed, skipping final extraction.
+[2025-07-25T11:15:24.758+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-25T11:15:24.761+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-25T11:15:24.842+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=flipkart_sentiment_pipeline_v3, task_id=extract_reviews_only_task, run_id=manual__2025-07-25T11:14:25.199029+00:00, execution_date=20250725T111425, start_date=20250725T111522, end_date=20250725T111524
+[2025-07-25T11:15:25.079+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-25T11:15:25.209+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-25T11:15:25.227+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

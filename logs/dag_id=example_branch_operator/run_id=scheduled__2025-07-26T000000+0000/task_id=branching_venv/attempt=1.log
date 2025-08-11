@@ -1,0 +1,78 @@
+[2025-07-27T10:16:35.348+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:16:35.620+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_operator.branching_venv scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:16:35.646+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_operator.branching_venv scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:16:35.653+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:16:35.722+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonVirtualenvOperator): branching_venv> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:16:35.800+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1856) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:16:35.818+0000] {standard_task_runner.py:64} INFO - Started process 1975 to run task
+[2025-07-27T10:16:35.796+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_branch_operator', 'branching_venv', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '195', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_operator.py', '--cfg-path', '/tmp/tmpnugd6w33']
+[2025-07-27T10:16:35.857+0000] {standard_task_runner.py:91} INFO - Job 195: Subtask branching_venv
+[2025-07-27T10:16:35.977+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:16:36.255+0000] {task_command.py:426} INFO - Running <TaskInstance: example_branch_operator.branching_venv scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:16:37.134+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_branch_operator' AIRFLOW_CTX_TASK_ID='branching_venv' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:16:37.222+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:16:37.242+0000] {baseoperator.py:400} WARNING - BranchPythonVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2025-07-27T10:16:37.243+0000] {baseoperator.py:400} WARNING - BranchPythonVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2025-07-27T10:16:37.319+0000] {python.py:708} INFO - Python virtual environment will be cached in /tmp/venv-5ea997a7
+[2025-07-27T10:16:37.422+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python -m virtualenv /tmp/venv-5ea997a7 --system-site-packages --python=python
+[2025-07-27T10:16:37.458+0000] {process_utils.py:187} INFO - Output:
+[2025-07-27T10:16:59.701+0000] {process_utils.py:191} INFO - created virtual environment CPython3.12.4.final.0-64 in 13127ms
+[2025-07-27T10:16:59.708+0000] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/tmp/venv-5ea997a7, clear=False, no_vcs_ignore=False, global=True)
+[2025-07-27T10:16:59.714+0000] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2025-07-27T10:16:59.717+0000] {process_utils.py:191} INFO -     added seed packages: pip==24.1
+[2025-07-27T10:16:59.728+0000] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-07-27T10:17:00.580+0000] {process_utils.py:183} INFO - Executing cmd: /tmp/venv-5ea997a7/bin/pip install -r /tmp/venv-5ea997a7/requirements.txt
+[2025-07-27T10:17:00.583+0000] {process_utils.py:187} INFO - Output:
+[2025-07-27T10:17:11.009+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-07-27T10:17:11.097+0000] {process_utils.py:132} INFO - Sending 15 to group 1975. PIDs of all processes in the group: [2186, 1975]
+[2025-07-27T10:17:11.268+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1975
+[2025-07-27T10:17:11.379+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-27T10:17:11.868+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:17:11.922+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2186, status='terminated', started='10:17:00') (2186) terminated with exit code None
+[2025-07-27T10:17:12.438+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 789, in execute
+    return self.do_branch(context, super().execute(context))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 437, in execute
+    return super().execute(context=serializable_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 751, in execute_callable
+    venv_path = self._ensure_venv_cache_exists(Path(self.venv_cache_path))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 741, in _ensure_venv_cache_exists
+    self._prepare_venv(venv_path)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 669, in _prepare_venv
+    prepare_virtualenv(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/python_virtualenv.py", line 119, in prepare_virtualenv
+    execute_in_subprocess(pip_cmd)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/process_utils.py", line 172, in execute_in_subprocess
+    execute_in_subprocess_with_kwargs(cmd, cwd=cwd)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/process_utils.py", line 190, in execute_in_subprocess_with_kwargs
+    for line in iter(proc.stdout.readline, b""):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-07-27T10:17:12.605+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=example_branch_operator, task_id=branching_venv, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101635, end_date=20250727T101712
+[2025-07-27T10:17:15.597+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1975, status='terminated', exitcode=2, started='10:16:35') (1975) terminated with exit code 2
+[2025-07-27T10:17:15.599+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 143
+[2025-07-27T10:17:15.824+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:17:15.940+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

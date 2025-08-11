@@ -1,0 +1,23 @@
+[2025-07-27T12:37:30.431+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T12:37:30.477+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-27T12:37:26.477444+00:00 map_index=0 [queued]>
+[2025-07-27T12:37:30.491+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-27T12:37:26.477444+00:00 map_index=0 [queued]>
+[2025-07-27T12:37:30.492+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T12:37:30.509+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): scrape_task> on 2025-07-27 12:37:26.477444+00:00
+[2025-07-27T12:37:30.524+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=352) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T12:37:30.526+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'parallel_scraping_pipeline', 'scrape_task', 'manual__2025-07-27T12:37:26.477444+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmppa29f43a', '--map-index', '0']
+[2025-07-27T12:37:30.527+0000] {standard_task_runner.py:64} INFO - Started process 354 to run task
+[2025-07-27T12:37:30.527+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask scrape_task
+[2025-07-27T12:37:30.550+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T12:37:30.625+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-27T12:37:26.477444+00:00 map_index=0 [running]> on host e8968f0d4369
+[2025-07-27T12:37:30.750+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T12:37:26.477444+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-27T12:37:26.477444+00:00'
+[2025-07-27T12:37:30.753+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T12:37:30.754+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-27T12:39:40.411+0000] {logging_mixin.py:188} INFO - Extracted - Phone: realme 14T 5G (Surf Green, 128 GB)  (8 GB RAM), Price: ₹17,999
+[2025-07-27T12:39:43.668+0000] {logging_mixin.py:188} INFO - Scraping Page 1 for realme 14T 5G (Surf Green, 128 GB)  (8 GB RAM)...
+[2025-07-27T12:39:46.318+0000] {logging_mixin.py:188} INFO - Scraping Page 2 for realme 14T 5G (Surf Green, 128 GB)  (8 GB RAM)...
+[2025-07-27T12:39:49.280+0000] {logging_mixin.py:188} INFO - Saved 20 reviews to /opt/***/data/raw/realme_14T_5G_(Surf_Green,_128_GB)__(8_GB_RAM)_reviews.csv
+[2025-07-27T12:39:49.427+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/raw/realme_14T_5G_(Surf_Green,_128_GB)__(8_GB_RAM)_reviews.csv
+[2025-07-27T12:39:49.427+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T12:39:49.465+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=parallel_scraping_pipeline, task_id=scrape_task, run_id=manual__2025-07-27T12:37:26.477444+00:00, map_index=0, execution_date=20250727T123726, start_date=20250727T123730, end_date=20250727T123949
+[2025-07-27T12:39:49.521+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T12:39:49.540+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

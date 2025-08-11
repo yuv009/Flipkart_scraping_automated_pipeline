@@ -1,0 +1,7 @@
+[2025-07-27T10:17:09.859+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:17:10.163+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_sla_dag.sleep_30 scheduled__2025-07-27T10:14:00+00:00 [queued]>
+[2025-07-27T10:17:10.224+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_sla_dag.sleep_30 scheduled__2025-07-27T10:14:00+00:00 [queued]>
+[2025-07-27T10:17:10.243+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:17:15.437+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-07-27T10:17:15.438+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 143
+[2025-07-27T10:17:15.522+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check

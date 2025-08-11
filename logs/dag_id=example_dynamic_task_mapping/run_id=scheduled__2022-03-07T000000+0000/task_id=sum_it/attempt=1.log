@@ -1,0 +1,19 @@
+[2025-07-27T10:15:51.254+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:15:52.129+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.sum_it scheduled__2022-03-07T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:52.276+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.sum_it scheduled__2022-03-07T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:52.332+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:15:52.548+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): sum_it> on 2022-03-07 00:00:00+00:00
+[2025-07-27T10:15:52.751+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1349) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:15:52.789+0000] {standard_task_runner.py:64} INFO - Started process 1535 to run task
+[2025-07-27T10:15:52.817+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_dynamic_task_mapping', 'sum_it', 'scheduled__2022-03-07T00:00:00+00:00', '--job-id', '154', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_dynamic_task_mapping.py', '--cfg-path', '/tmp/tmpt4v48qo8']
+[2025-07-27T10:15:52.916+0000] {standard_task_runner.py:91} INFO - Job 154: Subtask sum_it
+[2025-07-27T10:15:53.178+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:15:53.882+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dynamic_task_mapping.sum_it scheduled__2022-03-07T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:15:55.238+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_dynamic_task_mapping' AIRFLOW_CTX_TASK_ID='sum_it' AIRFLOW_CTX_EXECUTION_DATE='2022-03-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-03-07T00:00:00+00:00'
+[2025-07-27T10:15:55.254+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:15:55.278+0000] {logging_mixin.py:188} INFO - Total was 9
+[2025-07-27T10:15:55.284+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-27T10:15:55.285+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:15:55.324+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dynamic_task_mapping, task_id=sum_it, run_id=scheduled__2022-03-07T00:00:00+00:00, execution_date=20220307T000000, start_date=20250727T101552, end_date=20250727T101555
+[2025-07-27T10:15:55.597+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:15:55.644+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

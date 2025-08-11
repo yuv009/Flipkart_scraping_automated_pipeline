@@ -1,0 +1,160 @@
+[2025-07-28T21:11:00.882+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-28T21:11:01.702+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.load_to_postgres manual__2025-07-28T21:03:09.717459+00:00 map_index=1 [queued]>
+[2025-07-28T21:11:02.135+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.load_to_postgres manual__2025-07-28T21:03:09.717459+00:00 map_index=1 [queued]>
+[2025-07-28T21:11:02.136+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-28T21:11:02.682+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): load_to_postgres> on 2025-07-28 21:03:09.717459+00:00
+[2025-07-28T21:11:02.699+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2313) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-28T21:11:02.699+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_scraping_pipeline', 'load_to_postgres', 'manual__2025-07-28T21:03:09.717459+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmp0hwnr1ql', '--map-index', '1']
+[2025-07-28T21:11:02.701+0000] {standard_task_runner.py:64} INFO - Started process 2321 to run task
+[2025-07-28T21:11:02.701+0000] {standard_task_runner.py:91} INFO - Job 36: Subtask load_to_postgres
+[2025-07-28T21:11:03.277+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-28T21:11:04.654+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.load_to_postgres manual__2025-07-28T21:03:09.717459+00:00 map_index=1 [running]> on host 8cf7cfd9e861
+[2025-07-28T21:11:08.171+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-07-28T21:03:09.717459+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-28T21:03:09.717459+00:00'
+[2025-07-28T21:11:08.175+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-28T21:11:08.176+0000] {logging_mixin.py:188} INFO - Preparing to write /opt/airflow/data/cleaned/Samsung_Galaxy_S24_FE_5G_(Blue,_128_GB)__(8_GB_RAM)_reviews_CLEANED.csv to PostgreSQL table 'parallel_scrape_data'...
+[2025-07-28T21:11:12.207+0000] {logging_mixin.py:188} INFO - ❌ Error writing to PostgreSQL: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(parallel_scrape_data, 2200) already exists.
+
+[SQL: 
+CREATE TABLE parallel_scrape_data (
+	"Phone_Name" TEXT, 
+	"Price" FLOAT(53), 
+	"Review_ID" TEXT, 
+	"Author" TEXT, 
+	"Location" TEXT, 
+	"Rating" BIGINT, 
+	"Title" TEXT, 
+	"Review" TEXT, 
+	"Month" TEXT, 
+	"Year" FLOAT(53)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2025-07-28T21:11:12.210+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-28T21:11:12.211+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(parallel_scrape_data, 2200) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/parallel_pipeline_dag.py", line 47, in load_to_postgres
+    write_to_postgres(file_path=cleaned_file_path, table_name="parallel_scrape_data")
+  File "/opt/airflow/dags/db_module.py", line 28, in write_to_postgres
+    df.to_sql(table_name, engine, if_exists='append', index=False)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1948, in to_sql
+    table = self.prep_table(
+            ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1852, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 936, in create
+    self._execute_create()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 922, in _execute_create
+    self.table.create(bind=self.pd_sql.con)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/schema.py", line 962, in create
+    bind._run_ddl_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2221, in _run_ddl_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/visitors.py", line 524, in traverse_single
+    return meth(obj, **kw)
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/ddl.py", line 899, in visit_table
+    self.connection.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/ddl.py", line 80, in _execute_on_connection
+    return connection._execute_ddl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1477, in _execute_ddl
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(parallel_scrape_data, 2200) already exists.
+
+[SQL: 
+CREATE TABLE parallel_scrape_data (
+	"Phone_Name" TEXT, 
+	"Price" FLOAT(53), 
+	"Review_ID" TEXT, 
+	"Author" TEXT, 
+	"Location" TEXT, 
+	"Rating" BIGINT, 
+	"Title" TEXT, 
+	"Review" TEXT, 
+	"Month" TEXT, 
+	"Year" FLOAT(53)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2025-07-28T21:11:12.903+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=parallel_scraping_pipeline, task_id=load_to_postgres, run_id=manual__2025-07-28T21:03:09.717459+00:00, map_index=1, execution_date=20250728T210309, start_date=20250728T211101, end_date=20250728T211112
+[2025-07-28T21:11:14.098+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 36 for task load_to_postgres ((psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(parallel_scrape_data, 2200) already exists.
+
+[SQL: 
+CREATE TABLE parallel_scrape_data (
+	"Phone_Name" TEXT, 
+	"Price" FLOAT(53), 
+	"Review_ID" TEXT, 
+	"Author" TEXT, 
+	"Location" TEXT, 
+	"Rating" BIGINT, 
+	"Title" TEXT, 
+	"Review" TEXT, 
+	"Month" TEXT, 
+	"Year" FLOAT(53)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 2321)
+[2025-07-28T21:11:14.162+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-07-28T21:11:15.389+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-28T21:11:15.440+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

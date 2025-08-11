@@ -1,0 +1,71 @@
+[2025-07-27T13:14:12.863+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T13:14:12.929+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-27T13:14:09.139875+00:00 [queued]>
+[2025-07-27T13:14:12.942+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-27T13:14:09.139875+00:00 [queued]>
+[2025-07-27T13:14:12.944+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T13:14:12.962+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): process_urls_sequentially> on 2025-07-27 13:14:09.139875+00:00
+[2025-07-27T13:14:12.977+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1050) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T13:14:12.978+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sequential_scraping_pipeline', 'process_urls_sequentially', 'manual__2025-07-27T13:14:09.139875+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/sequential_pipeline_dag.py', '--cfg-path', '/tmp/tmpjzzkpkbm']
+[2025-07-27T13:14:12.980+0000] {standard_task_runner.py:64} INFO - Started process 1052 to run task
+[2025-07-27T13:14:12.980+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask process_urls_sequentially
+[2025-07-27T13:14:13.000+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T13:14:13.064+0000] {task_command.py:426} INFO - Running <TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-27T13:14:09.139875+00:00 [running]> on host 9465eee47a4f
+[2025-07-27T13:14:13.194+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sequential_scraping_pipeline' AIRFLOW_CTX_TASK_ID='process_urls_sequentially' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T13:14:09.139875+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-27T13:14:09.139875+00:00'
+[2025-07-27T13:14:13.197+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T13:14:13.200+0000] {logging_mixin.py:188} INFO - --- Starting sequential processing for: https://www.flipkart.com/oppo-a3x-nebula-red-64-gb/p/itmb6580550fdab9?pid=MOBH4SQN4NBAJSRS&lid=LSTMOBH4SQN4NBAJSRSM3LUGV&marketplace=FLIPKART&q=oppo&store=search.flipkart.com&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=c5a4fcb8-35f3-441c-a36e-4239a6ec5b05.MOBH4SQN4NBAJSRS.SEARCH&ppt=pp&ppn=pp&ssid=s5zdcfdb5c0000001753611616936&qH=c892ba238c98835d ---
+[2025-07-27T13:14:13.201+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-27T13:15:44.918+0000] {logging_mixin.py:188} INFO - Extracted - Phone: OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM), Price: ₹8,999
+[2025-07-27T13:15:48.168+0000] {logging_mixin.py:188} INFO - Scraping Page 1 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:15:51.080+0000] {logging_mixin.py:188} INFO - Scraping Page 2 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:15:53.841+0000] {logging_mixin.py:188} INFO - Scraping Page 3 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:15:56.791+0000] {logging_mixin.py:188} INFO - Scraping Page 4 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:16:00.101+0000] {logging_mixin.py:188} INFO - Scraping Page 5 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:16:02.723+0000] {logging_mixin.py:188} INFO - Scraping Page 6 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:16:06.004+0000] {logging_mixin.py:188} INFO - Scraping Page 7 for OPPO A3x (Nebula Red, 64 GB)  (4 GB RAM)...
+[2025-07-27T13:16:18.230+0000] {logging_mixin.py:188} INFO - Saved 66 reviews to /opt/***/data/raw/OPPO_A3x_(Nebula_Red,_64_GB)__(4_GB_RAM)_reviews.csv
+[2025-07-27T13:16:18.408+0000] {logging_mixin.py:188} INFO - Processing 66 reviews from OPPO_A3x_(Nebula_Red,_64_GB)__(4_GB_RAM)_reviews.csv...
+[2025-07-27T13:16:18.472+0000] {logging_mixin.py:188} INFO - 
+📁 Clean data saved: /opt/***/data/cleaned/OPPO_A3x_(Nebula_Red,_64_GB)__(4_GB_RAM)_reviews_CLEANED.csv
+[2025-07-27T13:16:18.473+0000] {logging_mixin.py:188} INFO - 📊 Final shape: (66, 10)
+[2025-07-27T13:16:18.474+0000] {logging_mixin.py:188} INFO - Extracting reviews from: /opt/***/data/cleaned/OPPO_A3x_(Nebula_Red,_64_GB)__(4_GB_RAM)_reviews_CLEANED.csv
+[2025-07-27T13:16:18.504+0000] {logging_mixin.py:188} INFO - Saved final review-only data to: /opt/***/data/final/OPPO_A3x_(Nebula_Red,_64_GB)__(4_GB_RAM)_reviews_reviews_only.csv
+[2025-07-27T13:16:18.505+0000] {logging_mixin.py:188} INFO - --- Starting sequential processing for: https://www.flipkart.com/oppo-reno14-5g-forest-green-256-gb/p/itm4d9e853eee6cf?pid=MOBHDDQ95MNGEZSJ&lid=LSTMOBHDDQ95MNGEZSJGGWO5W&marketplace=FLIPKART&q=oppo&store=search.flipkart.com&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c5a4fcb8-35f3-441c-a36e-4239a6ec5b05.MOBHDDQ95MNGEZSJ.SEARCH&ppt=pp&ppn=pp&ssid=s5zdcfdb5c0000001753611616936&qH=c892ba238c98835d ---
+[2025-07-27T13:16:18.506+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-27T13:16:35.281+0000] {logging_mixin.py:188} INFO - Extracted - Phone: OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM), Price: ₹37,999
+[2025-07-27T13:16:38.670+0000] {logging_mixin.py:188} INFO - Scraping Page 1 for OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM)...
+[2025-07-27T13:16:41.319+0000] {logging_mixin.py:188} INFO - Scraping Page 2 for OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM)...
+[2025-07-27T13:16:44.090+0000] {logging_mixin.py:188} INFO - Scraping Page 3 for OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM)...
+[2025-07-27T13:16:47.409+0000] {logging_mixin.py:188} INFO - An error occurred while scraping https://www.flipkart.com/oppo-reno14-5g-forest-green-256-gb/p/itm4d9e853eee6cf?pid=MOBHDDQ95MNGEZSJ&lid=LSTMOBHDDQ95MNGEZSJGGWO5W&marketplace=FLIPKART&q=oppo&store=search.flipkart.com&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c5a4fcb8-35f3-441c-a36e-4239a6ec5b05.MOBHDDQ95MNGEZSJ.SEARCH&ppt=pp&ppn=pp&ssid=s5zdcfdb5c0000001753611616936&qH=c892ba238c98835d: Message: element click intercepted: Element <a class="_9QVEpD" href="/oppo-reno14-5g-forest-green-256-gb/product-reviews/itm4d9e853eee6cf?pid=MOBHDDQ95MNGEZSJ&amp;lid=LSTMOBHDDQ95MNGEZSJGGWO5W&amp;marketplace=FLIPKART&amp;page=4">...</a> is not clickable at point (723, 461). Other element would receive the click: <div class="H30l+S h-JV4l">...</div>
+  (Session info: chrome=138.0.7204.168); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x57d9a5f6470e <unknown>
+#1 0x57d9a5a00a51 <unknown>
+#2 0x57d9a5a51701 <unknown>
+#3 0x57d9a5a4fcb9 <unknown>
+#4 0x57d9a5a4d851 <unknown>
+#5 0x57d9a5a4cfe3 <unknown>
+#6 0x57d9a5a4191a <unknown>
+#7 0x57d9a5a6eff2 <unknown>
+#8 0x57d9a5a410fd <unknown>
+#9 0x57d9a5a6f1be <unknown>
+#10 0x57d9a5a8e444 <unknown>
+#11 0x57d9a5a6edc3 <unknown>
+#12 0x57d9a5a3f959 <unknown>
+#13 0x57d9a5a404c1 <unknown>
+#14 0x57d9a5f308aa <unknown>
+#15 0x57d9a5f33c11 <unknown>
+#16 0x57d9a5f336a8 <unknown>
+#17 0x57d9a5f340b5 <unknown>
+#18 0x57d9a5f1a34c <unknown>
+#19 0x57d9a5f34421 <unknown>
+#20 0x57d9a5f02e2a <unknown>
+#21 0x57d9a5f52855 <unknown>
+#22 0x57d9a5f52a4e <unknown>
+#23 0x57d9a5f639f5 <unknown>
+#24 0x7de8be49d134 <unknown>
+[2025-07-27T13:16:47.568+0000] {logging_mixin.py:188} INFO - Scraping failed for https://www.flipkart.com/oppo-reno14-5g-forest-green-256-gb/p/itm4d9e853eee6cf?pid=MOBHDDQ95MNGEZSJ&lid=LSTMOBHDDQ95MNGEZSJGGWO5W&marketplace=FLIPKART&q=oppo&store=search.flipkart.com&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c5a4fcb8-35f3-441c-a36e-4239a6ec5b05.MOBHDDQ95MNGEZSJ.SEARCH&ppt=pp&ppn=pp&ssid=s5zdcfdb5c0000001753611616936&qH=c892ba238c98835d, skipping rest of the process.
+[2025-07-27T13:16:47.570+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-27T13:16:47.571+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T13:16:47.598+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sequential_scraping_pipeline, task_id=process_urls_sequentially, run_id=manual__2025-07-27T13:14:09.139875+00:00, execution_date=20250727T131409, start_date=20250727T131412, end_date=20250727T131647
+[2025-07-27T13:16:47.670+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T13:16:47.701+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T13:16:47.705+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,64 @@
+[2025-07-27T10:25:54.117+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:25:54.174+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T10:22:22.940924+00:00 map_index=1 [queued]>
+[2025-07-27T10:25:54.191+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T10:22:22.940924+00:00 map_index=1 [queued]>
+[2025-07-27T10:25:54.193+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:25:54.210+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): clean_task> on 2025-07-27 10:22:22.940924+00:00
+[2025-07-27T10:25:54.230+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=932) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:25:54.232+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'parallel_scraping_pipeline', 'clean_task', 'manual__2025-07-27T10:22:22.940924+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmptxrvf13n', '--map-index', '1']
+[2025-07-27T10:25:54.236+0000] {standard_task_runner.py:64} INFO - Started process 935 to run task
+[2025-07-27T10:25:54.241+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask clean_task
+[2025-07-27T10:25:54.270+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:25:54.369+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T10:22:22.940924+00:00 map_index=1 [running]> on host b689cdedccf8
+[2025-07-27T10:25:54.535+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='clean_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T10:22:22.940924+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-27T10:22:22.940924+00:00'
+[2025-07-27T10:25:54.539+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:25:54.567+0000] {logging_mixin.py:188} INFO - Processing 66 reviews from OPPO_A3x_(Nebula_Red,_64_GB)__(4_GB_RAM)_reviews.csv...
+[2025-07-27T10:25:54.572+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:25:54.575+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/parallel_pipeline_dag.py", line 34, in clean_task
+    return clean_raw_review_data(csv_path=raw_file_path, output_folder=CLEANED_DATA_FOLDER)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/cleaning.py", line 25, in clean_raw_review_data
+    df['Price'] = df['Price'].astype(str).str.replace(r'[₹,]', '', regex=True).str.extract(r'(\d+)').astype(float, errors='coerce')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 6534, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 414, in astype
+    return self.apply(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 354, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 616, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 223, in astype_array_safe
+    raise ValueError(invalid_arg)
+ValueError: Expected value of kwarg 'errors' to be one of ['raise', 'ignore']. Supplied value is 'coerce'
+[2025-07-27T10:25:54.607+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=parallel_scraping_pipeline, task_id=clean_task, run_id=manual__2025-07-27T10:22:22.940924+00:00, map_index=1, execution_date=20250727T102222, start_date=20250727T102554, end_date=20250727T102554
+[2025-07-27T10:25:54.628+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 6 for task clean_task (Expected value of kwarg 'errors' to be one of ['raise', 'ignore']. Supplied value is 'coerce'; 935)
+[2025-07-27T10:25:54.662+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-07-27T10:25:54.706+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:25:54.714+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

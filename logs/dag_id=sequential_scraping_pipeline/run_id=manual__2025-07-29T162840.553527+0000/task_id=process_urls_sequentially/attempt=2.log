@@ -1,0 +1,76 @@
+[2025-07-29T17:17:32.871+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T17:17:33.879+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-29T16:28:40.553527+00:00 [queued]>
+[2025-07-29T17:17:34.223+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-29T16:28:40.553527+00:00 [queued]>
+[2025-07-29T17:17:34.226+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 1
+[2025-07-29T17:17:34.709+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): process_urls_sequentially> on 2025-07-29 16:28:40.553527+00:00
+[2025-07-29T17:17:34.725+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'sequential_scraping_pipeline', 'process_urls_sequentially', 'manual__2025-07-29T16:28:40.553527+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/sequential_pipeline_dag.py', '--cfg-path', '/tmp/tmp270tmu9t']
+[2025-07-29T17:17:34.724+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=303) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T17:17:34.727+0000] {standard_task_runner.py:91} INFO - Job 163: Subtask process_urls_sequentially
+[2025-07-29T17:17:34.727+0000] {standard_task_runner.py:64} INFO - Started process 314 to run task
+[2025-07-29T17:17:35.701+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T17:17:38.088+0000] {task_command.py:426} INFO - Running <TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-29T16:28:40.553527+00:00 [running]> on host 9d15422f0f16
+[2025-07-29T17:17:44.081+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='sequential_scraping_pipeline' AIRFLOW_CTX_TASK_ID='process_urls_sequentially' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T16:28:40.553527+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T16:28:40.553527+00:00'
+[2025-07-29T17:17:44.084+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-29T17:17:44.085+0000] {logging_mixin.py:188} INFO - --- Starting sequential processing for: https://www.flipkart.com/apple-iphone-xr-yellow-128-gb-includes-earpods-power-adapter/p/itmf9z7zufda8hj6?pid=MOBF9Z7ZMQEXTUXJ&lid=LSTMOBF9Z7ZMQEXTUXJRTP7GV&marketplace=FLIPKART&q=iphone+xr&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=7ce329c3-d0c3-4e0e-8010-bd11431bd49c.MOBF9Z7ZMQEXTUXJ.SEARCH&ppt=sp&ppn=sp&ssid=mox1unc2bk0000001753797661414&qH=651153a0fac18d29 ---
+[2025-07-29T17:17:44.086+0000] {logging_mixin.py:188} INFO - Initializing Stealth WebDriver...
+[2025-07-29T17:17:52.304+0000] {logging_mixin.py:188} INFO - Extracted - Phone: Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter), Price: ₹52,900
+[2025-07-29T17:17:57.581+0000] {logging_mixin.py:188} INFO - Scraping Page 1 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:00.668+0000] {logging_mixin.py:188} INFO - Scraping Page 2 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:03.595+0000] {logging_mixin.py:188} INFO - Scraping Page 3 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:06.490+0000] {logging_mixin.py:188} INFO - Scraping Page 4 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:09.381+0000] {logging_mixin.py:188} INFO - Scraping Page 5 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:12.374+0000] {logging_mixin.py:188} INFO - Scraping Page 6 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:15.303+0000] {logging_mixin.py:188} INFO - Scraping Page 7 for Apple iPhone XR (Yellow, 128 GB) (Includes EarPods, Power Adapter)...
+[2025-07-29T17:18:17.952+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-07-29T17:18:17.955+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-07-29T17:18:17.962+0000] {process_utils.py:132} INFO - Sending 15 to group 314. PIDs of all processes in the group: [346, 352, 373, 374, 398, 405, 443, 453, 396, 314]
+[2025-07-29T17:18:17.963+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 314
+[2025-07-29T17:18:17.992+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-29T17:18:17.999+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x759f24e829c0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a4a9a1bead25b69dce6534910d41b686
+[2025-07-29T17:18:18.012+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x759f1f9f79b0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a4a9a1bead25b69dce6534910d41b686
+[2025-07-29T17:18:18.021+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x759f1fea8c50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a4a9a1bead25b69dce6534910d41b686
+[2025-07-29T17:18:18.024+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-29T17:18:18.035+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=346, status='terminated', started='17:17:43') (346) terminated with exit code None
+[2025-07-29T17:18:18.097+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=398, status='terminated', started='17:17:43') (398) terminated with exit code None
+[2025-07-29T17:18:18.099+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=352, status='terminated', started='17:17:43') (352) terminated with exit code None
+[2025-07-29T17:18:18.101+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=373, status='terminated', started='17:17:43') (373) terminated with exit code None
+[2025-07-29T17:18:18.103+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=396, status='terminated', started='17:17:43') (396) terminated with exit code None
+[2025-07-29T17:18:18.105+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=443, status='terminated', started='17:17:44') (443) terminated with exit code None
+[2025-07-29T17:18:18.239+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=405, status='terminated', started='17:17:43') (405) terminated with exit code None
+[2025-07-29T17:18:18.240+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=374, status='terminated', started='17:17:43') (374) terminated with exit code None
+[2025-07-29T17:18:18.242+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=453, status='terminated', started='17:17:44') (453) terminated with exit code None
+[2025-07-29T17:18:18.806+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/sequential_pipeline_dag.py", line 51, in process_urls_sequentially
+    raw_path = scrape_reviews_for_url(phone_url=url, output_folder=RAW_DATA_FOLDER)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/scraper_module.py", line 168, in scrape_reviews_for_url
+    WebDriverWait(driver, 15).until(EC.staleness_of(first_review_el))
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 137, in until
+    time.sleep(self._poll)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-07-29T17:18:18.944+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=sequential_scraping_pipeline, task_id=process_urls_sequentially, run_id=manual__2025-07-29T16:28:40.553527+00:00, execution_date=20250729T162840, start_date=20250729T171733, end_date=20250729T171818
+[2025-07-29T17:18:19.555+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=314, status='terminated', exitcode=2, started='17:17:34') (314) terminated with exit code 2

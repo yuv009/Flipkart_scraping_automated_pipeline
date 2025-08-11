@@ -1,0 +1,46 @@
+[2025-07-29T12:13:22.191+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T12:13:23.678+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=13 [queued]>
+[2025-07-29T12:13:24.478+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=13 [queued]>
+[2025-07-29T12:13:24.479+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-29T12:13:25.426+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): scrape_task> on 2025-07-29 11:47:54.549432+00:00
+[2025-07-29T12:13:25.453+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2528) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T12:13:25.452+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_scraping_pipeline', 'scrape_task', 'manual__2025-07-29T11:47:54.549432+00:00', '--job-id', '139', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmp4sn4dvr0', '--map-index', '13']
+[2025-07-29T12:13:25.455+0000] {standard_task_runner.py:64} INFO - Started process 2686 to run task
+[2025-07-29T12:13:25.455+0000] {standard_task_runner.py:91} INFO - Job 139: Subtask scrape_task
+[2025-07-29T12:13:26.669+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T12:13:29.619+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=13 [running]> on host da8a53e6d45e
+[2025-07-29T12:13:35.348+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T11:47:54.549432+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T11:47:54.549432+00:00'
+[2025-07-29T12:13:35.356+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-29T12:13:35.358+0000] {logging_mixin.py:188} INFO - Initializing Stealth WebDriver...
+[2025-07-29T12:13:37.927+0000] {logging_mixin.py:188} INFO - An error occurred while scraping "https://www.flipkart.com/samsung-galaxy-a35-5g-awesome-iceblue-128-gb/p/itm9684d2fe9201e?pid=MOBGYT2HEYWFCG8Q&lid=LSTMOBGYT2HEYWFCG8QGJ3RJ4&marketplace=FLIPKART&q=samsung+galaxy&store=search.flipkart.com&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=9a499254-d5ff-48cd-baf2-2994ad8f0deb.MOBGYT2HEYWFCG8Q.SEARCH&ppt=sp&ppn=sp&ssid=db1f7ir3qo0000001753125274247&qH=1c23e341fbd6b5e3: Message: invalid argument
+  (Session info: chrome=138.0.7204.168)
+Stacktrace:
+#0 0x596ac4fb170e <unknown>
+#1 0x596ac4a4d7dc <unknown>
+#2 0x596ac4a38994 <unknown>
+#3 0x596ac4a3772e <unknown>
+#4 0x596ac4a37804 <unknown>
+#5 0x596ac4a51a2d <unknown>
+#6 0x596ac4adb9ee <unknown>
+#7 0x596ac4abbff2 <unknown>
+#8 0x596ac4adb444 <unknown>
+#9 0x596ac4abbdc3 <unknown>
+#10 0x596ac4a8c959 <unknown>
+#11 0x596ac4a8d4c1 <unknown>
+#12 0x596ac4f7d8aa <unknown>
+#13 0x596ac4f80c11 <unknown>
+#14 0x596ac4f806a8 <unknown>
+#15 0x596ac4f810b5 <unknown>
+#16 0x596ac4f6734c <unknown>
+#17 0x596ac4f81421 <unknown>
+#18 0x596ac4f4fe2a <unknown>
+#19 0x596ac4f9f855 <unknown>
+#20 0x596ac4f9fa4e <unknown>
+#21 0x596ac4fb09f5 <unknown>
+#22 0x719b3fc7e134 <unknown>
+[2025-07-29T12:13:38.076+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-29T12:13:38.077+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-29T12:13:38.931+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=parallel_scraping_pipeline, task_id=scrape_task, run_id=manual__2025-07-29T11:47:54.549432+00:00, map_index=13, execution_date=20250729T114754, start_date=20250729T121323, end_date=20250729T121338
+[2025-07-29T12:13:39.576+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-29T12:13:40.992+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-29T12:13:41.135+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

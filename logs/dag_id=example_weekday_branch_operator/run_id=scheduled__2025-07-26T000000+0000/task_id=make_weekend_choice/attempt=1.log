@@ -1,0 +1,20 @@
+[2025-07-27T10:13:35.391+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:13:35.948+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_weekend_choice scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:13:36.055+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_weekend_choice scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:13:36.074+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:13:36.243+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchDayOfWeekOperator): make_weekend_choice> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:13:36.334+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=468) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:13:36.380+0000] {standard_task_runner.py:64} INFO - Started process 598 to run task
+[2025-07-27T10:13:36.339+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_weekday_branch_operator', 'make_weekend_choice', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '42', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_day_of_week_operator.py', '--cfg-path', '/tmp/tmpz6r9b3z1']
+[2025-07-27T10:13:36.410+0000] {standard_task_runner.py:91} INFO - Job 42: Subtask make_weekend_choice
+[2025-07-27T10:13:36.572+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:13:37.263+0000] {task_command.py:426} INFO - Running <TaskInstance: example_weekday_branch_operator.make_weekend_choice scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:13:38.608+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_weekday_branch_operator' AIRFLOW_CTX_TASK_ID='make_weekend_choice' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:13:38.617+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:13:38.628+0000] {branch.py:36} INFO - Branch into branch_weekend
+[2025-07-27T10:13:38.638+0000] {skipmixin.py:178} INFO - Following branch branch_weekend
+[2025-07-27T10:13:38.773+0000] {skipmixin.py:246} INFO - Skipping tasks [('branch_mid_week', -1)]
+[2025-07-27T10:13:38.865+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:13:38.990+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_weekday_branch_operator, task_id=make_weekend_choice, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101335, end_date=20250727T101338
+[2025-07-27T10:13:39.201+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:13:39.266+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

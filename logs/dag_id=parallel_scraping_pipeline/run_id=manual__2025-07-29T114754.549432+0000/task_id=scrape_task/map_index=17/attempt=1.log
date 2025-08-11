@@ -1,0 +1,45 @@
+[2025-07-29T12:16:54.930+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T12:16:56.800+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=17 [queued]>
+[2025-07-29T12:16:57.385+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=17 [queued]>
+[2025-07-29T12:16:57.387+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-29T12:16:57.991+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): scrape_task> on 2025-07-29 11:47:54.549432+00:00
+[2025-07-29T12:16:58.011+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=3737) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T12:16:58.011+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_scraping_pipeline', 'scrape_task', 'manual__2025-07-29T11:47:54.549432+00:00', '--job-id', '143', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmpv3haiekm', '--map-index', '17']
+[2025-07-29T12:16:58.013+0000] {standard_task_runner.py:64} INFO - Started process 3746 to run task
+[2025-07-29T12:16:58.014+0000] {standard_task_runner.py:91} INFO - Job 143: Subtask scrape_task
+[2025-07-29T12:16:58.957+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T12:17:01.530+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=17 [running]> on host da8a53e6d45e
+[2025-07-29T12:17:09.103+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T11:47:54.549432+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T11:47:54.549432+00:00'
+[2025-07-29T12:17:09.107+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-29T12:17:09.108+0000] {logging_mixin.py:188} INFO - Initializing Stealth WebDriver...
+[2025-07-29T12:17:18.833+0000] {logging_mixin.py:188} INFO - Extracted - Phone: Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM), Price: ₹41,999
+[2025-07-29T12:17:24.210+0000] {logging_mixin.py:188} INFO - Scraping Page 1 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:27.377+0000] {logging_mixin.py:188} INFO - Scraping Page 2 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:31.056+0000] {logging_mixin.py:188} INFO - Scraping Page 3 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:34.174+0000] {logging_mixin.py:188} INFO - Scraping Page 4 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:37.644+0000] {logging_mixin.py:188} INFO - Scraping Page 5 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:40.715+0000] {logging_mixin.py:188} INFO - Scraping Page 6 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:43.881+0000] {logging_mixin.py:188} INFO - Scraping Page 7 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:46.900+0000] {logging_mixin.py:188} INFO - Scraping Page 8 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:49.864+0000] {logging_mixin.py:188} INFO - Scraping Page 9 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:53.009+0000] {logging_mixin.py:188} INFO - Scraping Page 10 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:55.989+0000] {logging_mixin.py:188} INFO - Scraping Page 11 for Samsung Galaxy S24 FE 5G (Mint, 256 GB)  (8 GB RAM)...
+[2025-07-29T12:17:57.452+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-07-29T12:17:57.454+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-07-29T12:17:57.458+0000] {process_utils.py:132} INFO - Sending 15 to group 3746. PIDs of all processes in the group: [3780, 3786, 3807, 3808, 3832, 3838, 3888, 3896, 3829, 3746]
+[2025-07-29T12:17:57.459+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 3746
+[2025-07-29T12:17:57.461+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-29T12:17:57.485+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /session/fc0fcc1b4644f30f6c47f64a6588785b
+[2025-07-29T12:17:57.497+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74474ea3af00>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/fc0fcc1b4644f30f6c47f64a6588785b
+[2025-07-29T12:17:57.525+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74474f40a510>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/fc0fcc1b4644f30f6c47f64a6588785b
+[2025-07-29T12:17:57.530+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-29T12:17:57.560+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3888, status='terminated', started='12:17:09') (3888) terminated with exit code None
+[2025-07-29T12:17:57.563+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3780, status='terminated', started='12:17:09') (3780) terminated with exit code None
+[2025-07-29T12:17:57.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3807, status='terminated', started='12:17:09') (3807) terminated with exit code None
+[2025-07-29T12:17:57.569+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3786, status='terminated', started='12:17:09') (3786) terminated with exit code None
+[2025-07-29T12:17:57.709+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3896, status='terminated', started='12:17:10') (3896) terminated with exit code None
+[2025-07-29T12:17:57.710+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3829, status='terminated', started='12:17:09') (3829) terminated with exit code None
+[2025-07-29T12:17:57.711+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3832, status='terminated', started='12:17:09') (3832) terminated with exit code None
+[2025-07-29T12:17:57.712+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3808, status='terminated', started='12:17:09') (3808) terminated with exit code None
+[2025-07-29T12:17:57.714+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3838, status='terminated', started='12:17:09') (3838) terminated with exit code None
+[2025-07-29T12:17:58.572+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3746, status='terminated', exitcode=0, started='12:16:57') (3746) terminated with exit code 0

@@ -1,0 +1,22 @@
+[2025-07-27T10:13:27.978+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:13:28.404+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_short_circuit_operator.condition_is_True scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:13:28.531+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_short_circuit_operator.condition_is_True scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:13:28.534+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:13:28.673+0000] {taskinstance.py:2330} INFO - Executing <Task(ShortCircuitOperator): condition_is_True> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:13:28.737+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=421) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:13:28.759+0000] {standard_task_runner.py:64} INFO - Started process 551 to run task
+[2025-07-27T10:13:28.791+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_short_circuit_operator', 'condition_is_True', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_short_circuit_operator.py', '--cfg-path', '/tmp/tmpzqkzg0zl']
+[2025-07-27T10:13:28.842+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask condition_is_True
+[2025-07-27T10:13:29.027+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:13:29.480+0000] {task_command.py:426} INFO - Running <TaskInstance: example_short_circuit_operator.condition_is_True scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:13:30.123+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_short_circuit_operator' AIRFLOW_CTX_TASK_ID='condition_is_True' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:13:30.131+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:13:30.135+0000] {baseoperator.py:400} WARNING - ShortCircuitOperator.execute cannot be called outside TaskInstance!
+[2025-07-27T10:13:30.139+0000] {python.py:237} INFO - Done. Returned value was: True
+[2025-07-27T10:13:30.140+0000] {python.py:304} INFO - Condition result is True
+[2025-07-27T10:13:30.141+0000] {python.py:307} INFO - Proceeding with downstream tasks...
+[2025-07-27T10:13:30.144+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:13:30.338+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_short_circuit_operator, task_id=condition_is_True, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101328, end_date=20250727T101330
+[2025-07-27T10:13:30.794+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:13:31.176+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:13:31.230+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

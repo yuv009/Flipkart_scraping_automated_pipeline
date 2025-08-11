@@ -1,0 +1,50 @@
+[2025-07-25T12:05:33.643+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-25T12:05:33.694+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: flipkart_sentiment_pipeline_v3.scrape_task manual__2025-07-25T12:05:27.217213+00:00 [queued]>
+[2025-07-25T12:05:33.708+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: flipkart_sentiment_pipeline_v3.scrape_task manual__2025-07-25T12:05:27.217213+00:00 [queued]>
+[2025-07-25T12:05:33.710+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-25T12:05:33.755+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): scrape_task> on 2025-07-25 12:05:27.217213+00:00
+[2025-07-25T12:05:33.790+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=2684) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-07-25T12:05:33.794+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'flipkart_sentiment_pipeline_v3', 'scrape_task', 'manual__2025-07-25T12:05:27.217213+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/sentiment_pipeline_dag.py', '--cfg-path', '/tmp/tmpq4kgyu5t']
+[2025-07-25T12:05:33.800+0000] {standard_task_runner.py:64} INFO - Started process 2687 to run task
+[2025-07-25T12:05:33.804+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask scrape_task
+[2025-07-25T12:05:33.900+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-07-25T12:05:34.068+0000] {task_command.py:426} INFO - Running <TaskInstance: flipkart_sentiment_pipeline_v3.scrape_task manual__2025-07-25T12:05:27.217213+00:00 [running]> on host fb07c225d43f
+[2025-07-25T12:05:34.470+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='flipkart_sentiment_pipeline_v3' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-25T12:05:27.217213+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-25T12:05:27.217213+00:00'
+[2025-07-25T12:05:34.480+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-25T12:05:34.488+0000] {logging_mixin.py:188} INFO - Starting scrape for URL: https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itme5f540d559560
+[2025-07-25T12:05:34.491+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-25T12:10:34.970+0000] {selenium_manager.py:137} WARNING - Exception managing chrome: error decoding response body
+[2025-07-25T12:11:06.955+0000] {logging_mixin.py:188} INFO - Extracted - Phone: Unknown_Phone, Price: N/A
+[2025-07-25T12:11:07.017+0000] {logging_mixin.py:188} INFO - An error occurred while scraping https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itme5f540d559560: Message: no such element: Unable to locate element: {"method":"partial link text","selector":"All"}
+  (Session info: chrome=138.0.7204.168); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+#0 0x634a0852570e <unknown>
+#1 0x634a07fc1a51 <unknown>
+#2 0x634a0800c60f <unknown>
+#3 0x634a0800c7e1 <unknown>
+#4 0x634a08051694 <unknown>
+#5 0x634a0803001d <unknown>
+#6 0x634a0804f444 <unknown>
+#7 0x634a0802fdc3 <unknown>
+#8 0x634a08000959 <unknown>
+#9 0x634a080014c1 <unknown>
+#10 0x634a084f18aa <unknown>
+#11 0x634a084f4c11 <unknown>
+#12 0x634a084f46a8 <unknown>
+#13 0x634a084f50b5 <unknown>
+#14 0x634a084db34c <unknown>
+#15 0x634a084f5421 <unknown>
+#16 0x634a084c3e2a <unknown>
+#17 0x634a08513855 <unknown>
+#18 0x634a08513a4e <unknown>
+#19 0x634a085249f5 <unknown>
+#20 0x70b43184c134 <unknown>
+[2025-07-25T12:11:07.287+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-25T12:11:07.288+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-25T12:11:07.310+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=flipkart_sentiment_pipeline_v3, task_id=scrape_task, run_id=manual__2025-07-25T12:05:27.217213+00:00, execution_date=20250725T120527, start_date=20250725T120533, end_date=20250725T121107
+[2025-07-25T12:11:07.426+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-25T12:11:07.447+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

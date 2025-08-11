@@ -1,0 +1,22 @@
+[2025-07-27T10:12:55.543+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:12:55.853+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_produces_1.producing_task_1 scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:12:55.902+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_produces_1.producing_task_1 scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:12:55.920+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:12:56.094+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): producing_task_1> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:12:56.249+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=247) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:12:56.268+0000] {standard_task_runner.py:64} INFO - Started process 335 to run task
+[2025-07-27T10:12:56.262+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dataset_produces_1', 'producing_task_1', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_datasets.py', '--cfg-path', '/tmp/tmpwxa98gnu']
+[2025-07-27T10:12:56.323+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask producing_task_1
+[2025-07-27T10:12:56.403+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:12:56.705+0000] {task_command.py:426} INFO - Running <TaskInstance: dataset_produces_1.producing_task_1 scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:12:57.089+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataset_produces_1' AIRFLOW_CTX_TASK_ID='producing_task_1' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:12:57.092+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:12:57.096+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-07-27T10:12:57.099+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 5']
+[2025-07-27T10:12:57.284+0000] {subprocess.py:86} INFO - Output:
+[2025-07-27T10:13:02.320+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-27T10:13:02.325+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:13:02.621+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dataset_produces_1, task_id=producing_task_1, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101255, end_date=20250727T101302
+[2025-07-27T10:13:04.146+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:13:04.259+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:13:04.279+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

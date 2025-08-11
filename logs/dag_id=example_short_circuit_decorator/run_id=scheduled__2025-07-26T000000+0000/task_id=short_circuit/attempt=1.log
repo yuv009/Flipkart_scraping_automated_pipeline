@@ -1,0 +1,22 @@
+[2025-07-27T10:13:38.344+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:13:38.691+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_short_circuit_decorator.short_circuit scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:13:38.858+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_short_circuit_decorator.short_circuit scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:13:38.866+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:13:38.939+0000] {taskinstance.py:2330} INFO - Executing <Task(_ShortCircuitDecoratedOperator): short_circuit> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:13:39.020+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_short_circuit_decorator', 'short_circuit', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_short_circuit_decorator.py', '--cfg-path', '/tmp/tmpn3rm18ia']
+[2025-07-27T10:13:39.053+0000] {standard_task_runner.py:91} INFO - Job 46: Subtask short_circuit
+[2025-07-27T10:13:39.022+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=470) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:13:39.060+0000] {standard_task_runner.py:64} INFO - Started process 608 to run task
+[2025-07-27T10:13:39.138+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:13:39.603+0000] {task_command.py:426} INFO - Running <TaskInstance: example_short_circuit_decorator.short_circuit scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:13:40.345+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_short_circuit_decorator' AIRFLOW_CTX_TASK_ID='short_circuit' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:13:40.359+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:13:40.367+0000] {python.py:237} INFO - Done. Returned value was: False
+[2025-07-27T10:13:40.370+0000] {python.py:304} INFO - Condition result is False
+[2025-07-27T10:13:40.376+0000] {python.py:331} INFO - Skipping downstream tasks
+[2025-07-27T10:13:40.547+0000] {python.py:339} INFO - Done.
+[2025-07-27T10:13:40.550+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:13:40.637+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_short_circuit_decorator, task_id=short_circuit, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101338, end_date=20250727T101340
+[2025-07-27T10:13:40.947+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:13:41.133+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:13:41.175+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

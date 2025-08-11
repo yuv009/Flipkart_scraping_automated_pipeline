@@ -1,0 +1,19 @@
+[2025-07-27T10:15:08.819+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:15:09.407+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_task_group_decorator.task_group_function__4.task_2 scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:09.586+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_task_group_decorator.task_group_function__4.task_2 scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:09.609+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:15:09.808+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): task_group_function__4.task_2> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:15:10.092+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1124) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:15:10.111+0000] {standard_task_runner.py:64} INFO - Started process 1253 to run task
+[2025-07-27T10:15:10.020+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_task_group_decorator', 'task_group_function__4.task_2', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_task_group_decorator.py', '--cfg-path', '/tmp/tmp4hftxswj']
+[2025-07-27T10:15:10.156+0000] {standard_task_runner.py:91} INFO - Job 117: Subtask task_group_function__4.task_2
+[2025-07-27T10:15:10.239+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:15:10.835+0000] {task_command.py:426} INFO - Running <TaskInstance: example_task_group_decorator.task_group_function__4.task_2 scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:15:12.343+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_task_group_decorator' AIRFLOW_CTX_TASK_ID='task_group_function__4.task_2' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:15:12.357+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:15:12.363+0000] {python.py:237} INFO - Done. Returned value was: [ Task2 [ Task1 4 ] ]
+[2025-07-27T10:15:12.368+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:15:12.538+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_task_group_decorator, task_id=task_group_function__4.task_2, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101509, end_date=20250727T101512
+[2025-07-27T10:15:12.828+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:15:13.242+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:15:13.266+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,112 @@
+[2025-07-27T10:05:08.732+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:05:09.238+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-27T10:04:39.132307+00:00 [queued]>
+[2025-07-27T10:05:09.338+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-27T10:04:39.132307+00:00 [queued]>
+[2025-07-27T10:05:09.349+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:05:09.515+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): process_urls_sequentially> on 2025-07-27 10:04:39.132307+00:00
+[2025-07-27T10:05:09.663+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=76066) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:05:09.681+0000] {standard_task_runner.py:64} INFO - Started process 76136 to run task
+[2025-07-27T10:05:09.669+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sequential_scraping_pipeline', 'process_urls_sequentially', 'manual__2025-07-27T10:04:39.132307+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/sequential_pipeline_dag.py', '--cfg-path', '/tmp/tmprmk4y677']
+[2025-07-27T10:05:09.697+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask process_urls_sequentially
+[2025-07-27T10:05:09.851+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:05:10.348+0000] {task_command.py:426} INFO - Running <TaskInstance: sequential_scraping_pipeline.process_urls_sequentially manual__2025-07-27T10:04:39.132307+00:00 [running]> on host c5e8c6942178
+[2025-07-27T10:05:11.430+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sequential_scraping_pipeline' AIRFLOW_CTX_TASK_ID='process_urls_sequentially' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T10:04:39.132307+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-27T10:04:39.132307+00:00'
+[2025-07-27T10:05:11.448+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:05:11.486+0000] {logging_mixin.py:188} INFO - --- Starting sequential processing for: https://www.flipkart.com/vivo-y18-gem-green-64-gb/p/itmcc2aa767456c8?pid=MOBHY779W4MFWK37&lid=LSTMOBHY779W4MFWK370CQWCW&marketplace=FLIPKART&q=vivo&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=0f14f856-02f8-439d-b5ad-e581fcc947c8.MOBHY779W4MFWK37.SEARCH&ppt=dynamic&ppn=dynamic&ssid=qtyfuyb8280000001753605716546&qH=b09207f5c299c427 ---
+[2025-07-27T10:05:11.510+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-27T10:07:15.842+0000] {logging_mixin.py:188} INFO - An error occurred while scraping https://www.flipkart.com/vivo-y18-gem-green-64-gb/p/itmcc2aa767456c8?pid=MOBHY779W4MFWK37&lid=LSTMOBHY779W4MFWK370CQWCW&marketplace=FLIPKART&q=vivo&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=0f14f856-02f8-439d-b5ad-e581fcc947c8.MOBHY779W4MFWK37.SEARCH&ppt=dynamic&ppn=dynamic&ssid=qtyfuyb8280000001753605716546&qH=b09207f5c299c427: HTTPConnectionPool(host='localhost', port=47109): Read timed out. (read timeout=120)
+[2025-07-27T10:09:15.933+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=47109): Read timed out. (read timeout=120)")': /session/4a718a09378cb20de6244dbd23f67cd2
+[2025-07-27T10:09:51.869+0000] {logging_mixin.py:188} INFO - Scraping failed for https://www.flipkart.com/vivo-y18-gem-green-64-gb/p/itmcc2aa767456c8?pid=MOBHY779W4MFWK37&lid=LSTMOBHY779W4MFWK370CQWCW&marketplace=FLIPKART&q=vivo&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=0f14f856-02f8-439d-b5ad-e581fcc947c8.MOBHY779W4MFWK37.SEARCH&ppt=dynamic&ppn=dynamic&ssid=qtyfuyb8280000001753605716546&qH=b09207f5c299c427, skipping rest of the process.
+[2025-07-27T10:09:51.870+0000] {logging_mixin.py:188} INFO - --- Starting sequential processing for: https://www.flipkart.com/vivo-t4-lite-5g-charger-box-titanium-gold-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9F2NKVDSYE&lid=LSTMOBHDY9F2NKVDSYENNGQ9C&marketplace=FLIPKART&q=vivo&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=0f14f856-02f8-439d-b5ad-e581fcc947c8.MOBHDY9F2NKVDSYE.SEARCH&ppt=dynamic&ppn=dynamic&ssid=qtyfuyb8280000001753605716546&qH=b09207f5c299c427 ---
+[2025-07-27T10:09:51.871+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-27T10:11:20.612+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-07-27T10:11:20.630+0000] {process_utils.py:132} INFO - Sending 15 to group 76136. PIDs of all processes in the group: [79359, 79367, 79388, 79389, 79413, 79416, 79459, 79469, 79411, 76136]
+[2025-07-27T10:11:20.817+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 76136
+[2025-07-27T10:11:20.830+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-27T10:11:21.076+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /session/0bd906f589c3349c823dc92ee1979099
+[2025-07-27T10:11:21.092+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x720521462d50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0bd906f589c3349c823dc92ee1979099
+[2025-07-27T10:11:21.120+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x720521593920>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0bd906f589c3349c823dc92ee1979099
+[2025-07-27T10:11:21.124+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:11:21.241+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79359, status='terminated', started='10:09:51') (79359) terminated with exit code None
+[2025-07-27T10:11:21.297+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/sequential_pipeline_dag.py", line 44, in process_urls_sequentially
+    raw_path = scrape_reviews_for_url(phone_url=url, output_folder=RAW_DATA_FOLDER)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/scraper_module.py", line 65, in scrape_reviews_for_url
+    driver.get(phone_url)
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 479, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 451, in execute
+    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 708, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-07-27T10:11:21.434+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=sequential_scraping_pipeline, task_id=process_urls_sequentially, run_id=manual__2025-07-27T10:04:39.132307+00:00, execution_date=20250727T100439, start_date=20250727T100509, end_date=20250727T101121
+[2025-07-27T10:11:21.470+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79389, status='terminated', started='10:09:52') (79389) terminated with exit code None
+[2025-07-27T10:11:21.487+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79413, status='terminated', started='10:09:52') (79413) terminated with exit code None
+[2025-07-27T10:11:21.509+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=76136, status='terminated', exitcode=2, started='10:05:09') (76136) terminated with exit code 2
+[2025-07-27T10:11:21.529+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79416, status='terminated', started='10:09:52') (79416) terminated with exit code None
+[2025-07-27T10:11:21.581+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79411, status='terminated', started='10:09:52') (79411) terminated with exit code None
+[2025-07-27T10:11:21.621+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79469, status='terminated', started='10:09:52') (79469) terminated with exit code None
+[2025-07-27T10:11:21.632+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79388, status='terminated', started='10:09:52') (79388) terminated with exit code None
+[2025-07-27T10:11:21.654+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79459, status='terminated', started='10:09:52') (79459) terminated with exit code None
+[2025-07-27T10:11:21.656+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=79367, status='terminated', started='10:09:52') (79367) terminated with exit code None
+[2025-07-27T10:11:21.658+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 143
+[2025-07-27T10:11:21.720+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check

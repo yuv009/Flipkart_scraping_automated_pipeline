@@ -1,0 +1,52 @@
+[2025-07-27T11:08:14.933+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T11:08:14.981+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-27T11:08:11.148418+00:00 map_index=0 [queued]>
+[2025-07-27T11:08:14.994+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-27T11:08:11.148418+00:00 map_index=0 [queued]>
+[2025-07-27T11:08:14.995+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T11:08:15.013+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): scrape_task> on 2025-07-27 11:08:11.148418+00:00
+[2025-07-27T11:08:15.029+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=3517) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T11:08:15.031+0000] {standard_task_runner.py:64} INFO - Started process 3519 to run task
+[2025-07-27T11:08:15.030+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'parallel_scraping_pipeline', 'scrape_task', 'manual__2025-07-27T11:08:11.148418+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmp0wq4nx7z', '--map-index', '0']
+[2025-07-27T11:08:15.031+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask scrape_task
+[2025-07-27T11:08:15.052+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T11:08:15.117+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-27T11:08:11.148418+00:00 map_index=0 [running]> on host b689cdedccf8
+[2025-07-27T11:08:15.244+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T11:08:11.148418+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-27T11:08:11.148418+00:00'
+[2025-07-27T11:08:15.247+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T11:08:15.249+0000] {logging_mixin.py:188} INFO - Initializing WebDriver...
+[2025-07-27T11:09:17.971+0000] {logging_mixin.py:188} INFO - Extracted - Phone: OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM), Price: ₹37,999
+[2025-07-27T11:09:21.234+0000] {logging_mixin.py:188} INFO - Scraping Page 1 for OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM)...
+[2025-07-27T11:09:23.973+0000] {logging_mixin.py:188} INFO - Scraping Page 2 for OPPO Reno14 5G (Forest Green, 256 GB)  (8 GB RAM)...
+[2025-07-27T11:09:27.363+0000] {logging_mixin.py:188} INFO - An error occurred while scraping https://www.flipkart.com/oppo-reno14-5g-forest-green-256-gb/p/itm4d9e853eee6cf?pid=MOBHDDQ95MNGEZSJ&lid=LSTMOBHDDQ95MNGEZSJGGWO5W&marketplace=FLIPKART&q=oppo&store=search.flipkart.com&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c5a4fcb8-35f3-441c-a36e-4239a6ec5b05.MOBHDDQ95MNGEZSJ.SEARCH&ppt=pp&ppn=pp&ssid=s5zdcfdb5c0000001753611616936&qH=c892ba238c98835d: Message: element click intercepted: Element <a class="_9QVEpD" href="/oppo-reno14-5g-forest-green-256-gb/product-reviews/itm4d9e853eee6cf?pid=MOBHDDQ95MNGEZSJ&amp;lid=LSTMOBHDDQ95MNGEZSJGGWO5W&amp;marketplace=FLIPKART&amp;page=2">...</a> is not clickable at point (723, 461). Other element would receive the click: <div class="H30l+S h-JV4l">...</div>
+  (Session info: chrome=138.0.7204.168); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x588fa984b70e <unknown>
+#1 0x588fa92e7a51 <unknown>
+#2 0x588fa9338701 <unknown>
+#3 0x588fa9336cb9 <unknown>
+#4 0x588fa9334851 <unknown>
+#5 0x588fa9333fe3 <unknown>
+#6 0x588fa932891a <unknown>
+#7 0x588fa9355ff2 <unknown>
+#8 0x588fa93280fd <unknown>
+#9 0x588fa93561be <unknown>
+#10 0x588fa9375444 <unknown>
+#11 0x588fa9355dc3 <unknown>
+#12 0x588fa9326959 <unknown>
+#13 0x588fa93274c1 <unknown>
+#14 0x588fa98178aa <unknown>
+#15 0x588fa981ac11 <unknown>
+#16 0x588fa981a6a8 <unknown>
+#17 0x588fa981b0b5 <unknown>
+#18 0x588fa980134c <unknown>
+#19 0x588fa981b421 <unknown>
+#20 0x588fa97e9e2a <unknown>
+#21 0x588fa9839855 <unknown>
+#22 0x588fa9839a4e <unknown>
+#23 0x588fa984a9f5 <unknown>
+#24 0x78a8ac046134 <unknown>
+[2025-07-27T11:09:27.566+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-27T11:09:27.569+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T11:09:27.589+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=parallel_scraping_pipeline, task_id=scrape_task, run_id=manual__2025-07-27T11:08:11.148418+00:00, map_index=0, execution_date=20250727T110811, start_date=20250727T110814, end_date=20250727T110927
+[2025-07-27T11:09:27.653+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T11:09:27.720+0000] {abstractoperator.py:588} INFO - Marking <TaskInstance: parallel_scraping_pipeline.clean_task manual__2025-07-27T11:08:11.148418+00:00 [None]> as SKIPPED since the map has 0 values to expand
+[2025-07-27T11:09:27.742+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T11:09:27.748+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

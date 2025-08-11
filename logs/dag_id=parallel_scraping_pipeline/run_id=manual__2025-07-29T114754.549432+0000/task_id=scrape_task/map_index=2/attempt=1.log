@@ -1,0 +1,16 @@
+[2025-07-29T11:50:13.967+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T11:50:19.322+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=2 [queued]>
+[2025-07-29T11:50:20.446+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.scrape_task manual__2025-07-29T11:47:54.549432+00:00 map_index=2 [queued]>
+[2025-07-29T11:50:20.457+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-29T11:50:21.170+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): scrape_task> on 2025-07-29 11:47:54.549432+00:00
+[2025-07-29T11:50:21.306+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2953) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T11:50:21.311+0000] {standard_task_runner.py:64} INFO - Started process 3263 to run task
+[2025-07-29T11:50:21.297+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_scraping_pipeline', 'scrape_task', 'manual__2025-07-29T11:47:54.549432+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmpuq4bgdrl', '--map-index', '2']
+[2025-07-29T11:50:21.329+0000] {standard_task_runner.py:91} INFO - Job 124: Subtask scrape_task
+[2025-07-29T11:50:22.935+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T11:50:47.126+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 124 for task scrape_task ((psycopg2.OperationalError) connection to server at "flipkart-pipeline-db.postgres.database.azure.com" (98.70.123.132), port 5432 failed: SSL SYSCALL error: EOF detected
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 3263)
+[2025-07-29T11:50:47.192+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-07-29T11:50:49.479+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-29T11:50:49.656+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

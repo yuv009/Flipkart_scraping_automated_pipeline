@@ -1,0 +1,22 @@
+[2025-07-27T10:13:30.487+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:13:30.991+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_consumes_1.consuming_1 dataset_triggered__2025-07-27T10:13:03.777659+00:00 [queued]>
+[2025-07-27T10:13:31.097+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_consumes_1.consuming_1 dataset_triggered__2025-07-27T10:13:03.777659+00:00 [queued]>
+[2025-07-27T10:13:31.122+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:13:31.416+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): consuming_1> on 2025-07-27 10:13:03.777659+00:00
+[2025-07-27T10:13:31.692+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=425) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:13:31.761+0000] {standard_task_runner.py:64} INFO - Started process 570 to run task
+[2025-07-27T10:13:31.689+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dataset_consumes_1', 'consuming_1', 'dataset_triggered__2025-07-27T10:13:03.777659+00:00', '--job-id', '36', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_datasets.py', '--cfg-path', '/tmp/tmpguj0mwzr']
+[2025-07-27T10:13:31.859+0000] {standard_task_runner.py:91} INFO - Job 36: Subtask consuming_1
+[2025-07-27T10:13:32.016+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:13:32.417+0000] {task_command.py:426} INFO - Running <TaskInstance: dataset_consumes_1.consuming_1 dataset_triggered__2025-07-27T10:13:03.777659+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:13:33.683+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataset_consumes_1' AIRFLOW_CTX_TASK_ID='consuming_1' AIRFLOW_CTX_EXECUTION_DATE='2025-07-27T10:13:03.777659+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='dataset_triggered__2025-07-27T10:13:03.777659+00:00'
+[2025-07-27T10:13:33.745+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:13:33.767+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-07-27T10:13:33.779+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 5']
+[2025-07-27T10:13:34.023+0000] {subprocess.py:86} INFO - Output:
+[2025-07-27T10:13:39.086+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-27T10:13:39.096+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:13:39.444+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dataset_consumes_1, task_id=consuming_1, run_id=dataset_triggered__2025-07-27T10:13:03.777659+00:00, execution_date=20250727T101303, start_date=20250727T101330, end_date=20250727T101339
+[2025-07-27T10:13:41.024+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:13:41.156+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:13:41.169+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

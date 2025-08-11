@@ -1,0 +1,35 @@
+[2025-07-29T08:42:51.264+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T08:42:52.066+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.create_reviewer_data_table manual__2025-07-29T08:42:39.808367+00:00 [queued]>
+[2025-07-29T08:42:52.348+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parallel_scraping_pipeline.create_reviewer_data_table manual__2025-07-29T08:42:39.808367+00:00 [queued]>
+[2025-07-29T08:42:52.349+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-29T08:42:52.982+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_reviewer_data_table> on 2025-07-29 08:42:39.808367+00:00
+[2025-07-29T08:42:53.004+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_scraping_pipeline', 'create_reviewer_data_table', 'manual__2025-07-29T08:42:39.808367+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/parallel_pipeline_dag.py', '--cfg-path', '/tmp/tmpv2bvoa9a']
+[2025-07-29T08:42:53.006+0000] {standard_task_runner.py:91} INFO - Job 72: Subtask create_reviewer_data_table
+[2025-07-29T08:42:53.005+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=430) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T08:42:53.008+0000] {standard_task_runner.py:64} INFO - Started process 446 to run task
+[2025-07-29T08:42:53.691+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T08:42:55.489+0000] {task_command.py:426} INFO - Running <TaskInstance: parallel_scraping_pipeline.create_reviewer_data_table manual__2025-07-29T08:42:39.808367+00:00 [running]> on host e287f56751a6
+[2025-07-29T08:42:59.552+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='parallel_scraping_pipeline' AIRFLOW_CTX_TASK_ID='create_reviewer_data_table' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T08:42:39.808367+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T08:42:39.808367+00:00'
+[2025-07-29T08:42:59.555+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-29T08:42:59.556+0000] {sql.py:282} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS flipkart_reviewer_data (
+            "Phone_Name" TEXT, "Price" FLOAT(53), "Review_ID" TEXT, 
+            "Author" TEXT, "Location" TEXT, "Rating" BIGINT, "Title" TEXT, 
+            "Review" TEXT, "Month" TEXT, "Year" FLOAT(53)
+        );
+        
+[2025-07-29T08:43:00.226+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2025-07-29T08:43:00.912+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2025-07-29T08:43:01.425+0000] {sql.py:495} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS flipkart_reviewer_data (
+            "Phone_Name" TEXT, "Price" FLOAT(53), "Review_ID" TEXT, 
+            "Author" TEXT, "Location" TEXT, "Rating" BIGINT, "Title" TEXT, 
+            "Review" TEXT, "Month" TEXT, "Year" FLOAT(53)
+        );
+        , parameters: None
+[2025-07-29T08:43:01.645+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-29T08:43:02.308+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=parallel_scraping_pipeline, task_id=create_reviewer_data_table, run_id=manual__2025-07-29T08:42:39.808367+00:00, execution_date=20250729T084239, start_date=20250729T084252, end_date=20250729T084302
+[2025-07-29T08:43:02.746+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-29T08:43:03.364+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py:1297 AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2025-07-29T08:43:04.285+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-29T08:43:04.349+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

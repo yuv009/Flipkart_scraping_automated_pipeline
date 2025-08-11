@@ -1,0 +1,356 @@
+[2025-07-30T13:52:20.670+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T13:52:20.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T13:52:20.709+0000] {logging_mixin.py:188} INFO - [2025-07-30T13:52:20.708+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T13:52:38.761+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T13:52:41.846+0000] {logging_mixin.py:188} INFO - [2025-07-30T13:52:41.843+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T13:52:42.026+0000] {logging_mixin.py:188} INFO - [2025-07-30T13:52:42.025+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T13:52:43.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 23.318 seconds
+[2025-07-30T13:53:15.343+0000] {processor.py:161} INFO - Started process (PID=274) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T13:53:15.345+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T13:53:15.357+0000] {logging_mixin.py:188} INFO - [2025-07-30T13:53:15.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T13:53:18.261+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T13:53:20.400+0000] {logging_mixin.py:188} INFO - [2025-07-30T13:53:20.399+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T13:53:20.668+0000] {logging_mixin.py:188} INFO - [2025-07-30T13:53:20.667+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T13:53:22.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 6.758 seconds
+[2025-07-30T14:03:40.638+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:03:40.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:03:40.665+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:03:40.658+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:03:45.811+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:03:58.367+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:03:58.364+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:04:02.365+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:04:02.364+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:04:27.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 46.760 seconds
+[2025-07-30T14:07:18.762+0000] {processor.py:161} INFO - Started process (PID=357) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:07:18.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:07:18.773+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:07:18.772+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:07:21.143+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:07:27.160+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:07:27.158+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:07:27.944+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:07:27.943+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:07:31.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 13.054 seconds
+[2025-07-30T14:08:02.500+0000] {processor.py:161} INFO - Started process (PID=381) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:08:02.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:08:02.511+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:08:02.509+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:08:04.440+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:08:09.191+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:08:09.188+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:08:09.430+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:08:09.429+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:08:12.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 10.385 seconds
+[2025-07-30T14:10:24.351+0000] {processor.py:161} INFO - Started process (PID=439) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:10:24.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:10:24.362+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:10:24.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:10:26.863+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:10:31.051+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:10:31.049+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:10:31.248+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:10:31.244+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:10:34.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.992 seconds
+[2025-07-30T14:11:06.586+0000] {processor.py:161} INFO - Started process (PID=465) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:11:06.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:11:06.598+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:11:06.597+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:11:11.101+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:11:14.272+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:11:14.269+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:11:14.558+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:11:14.557+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:11:17.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 10.518 seconds
+[2025-07-30T14:11:47.843+0000] {processor.py:161} INFO - Started process (PID=492) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:11:47.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:11:47.853+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:11:47.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:11:50.280+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:11:53.557+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:11:53.555+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:11:53.901+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:11:53.900+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:11:57.201+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.380 seconds
+[2025-07-30T14:12:28.827+0000] {processor.py:161} INFO - Started process (PID=518) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:12:28.831+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:12:28.840+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:12:28.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:12:30.960+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:12:34.533+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:12:34.527+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:12:35.121+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:12:35.120+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:12:37.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 8.888 seconds
+[2025-07-30T14:13:08.520+0000] {processor.py:161} INFO - Started process (PID=544) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:13:08.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:13:08.538+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:13:08.537+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:13:11.449+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:13:14.641+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:13:14.637+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:13:15.224+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:13:15.223+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:13:17.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.318 seconds
+[2025-07-30T14:13:48.885+0000] {processor.py:161} INFO - Started process (PID=571) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:13:48.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:13:48.898+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:13:48.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:13:51.126+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:13:57.621+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:13:57.619+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:13:57.804+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:13:57.803+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:14:00.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 11.908 seconds
+[2025-07-30T14:14:42.205+0000] {processor.py:161} INFO - Started process (PID=605) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:14:42.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:14:42.218+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:14:42.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:14:44.531+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:14:52.776+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:14:52.770+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:14:53.275+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:14:53.274+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:14:58.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 16.747 seconds
+[2025-07-30T14:15:33.492+0000] {processor.py:161} INFO - Started process (PID=630) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:15:33.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:15:33.505+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:15:33.504+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:15:37.592+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:15:40.896+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:15:40.894+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:15:41.160+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:15:41.159+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:15:44.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 11.443 seconds
+[2025-07-30T14:16:16.158+0000] {processor.py:161} INFO - Started process (PID=662) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:16:16.181+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:16:16.207+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:16:16.202+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:16:21.768+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:16:36.194+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:16:36.181+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:16:54.173+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:16:54.172+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:17:37.295+0000] {processor.py:161} INFO - Started process (PID=700) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:17:37.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:17:37.310+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:17:37.309+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:17:39.819+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:17:42.238+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:17:42.237+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:17:42.464+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:17:42.463+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:17:46.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.393 seconds
+[2025-07-30T14:18:20.894+0000] {processor.py:161} INFO - Started process (PID=726) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:18:20.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:18:20.910+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:18:20.909+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:18:23.594+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:18:30.642+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:18:30.640+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:18:30.929+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:18:30.928+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:18:36.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 15.353 seconds
+[2025-07-30T14:19:07.733+0000] {processor.py:161} INFO - Started process (PID=755) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:19:07.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:19:07.745+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:19:07.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:19:09.763+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:19:12.854+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:19:12.853+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:19:13.109+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:19:13.109+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:19:17.379+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.665 seconds
+[2025-07-30T14:19:48.096+0000] {processor.py:161} INFO - Started process (PID=781) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:19:48.100+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:19:48.106+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:19:48.105+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:19:50.189+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:19:53.283+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:19:53.281+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:19:53.438+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:19:53.437+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:19:55.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 7.802 seconds
+[2025-07-30T14:20:28.051+0000] {processor.py:161} INFO - Started process (PID=808) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:20:28.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:20:28.061+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:20:28.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:20:30.576+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:20:34.128+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:20:34.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:20:34.359+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:20:34.358+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:20:38.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 10.109 seconds
+[2025-07-30T14:21:09.725+0000] {processor.py:161} INFO - Started process (PID=835) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:21:09.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:21:09.737+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:21:09.736+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:21:11.809+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:21:19.038+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:21:19.035+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:21:19.710+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:21:19.710+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:21:24.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 15.181 seconds
+[2025-07-30T14:21:56.912+0000] {processor.py:161} INFO - Started process (PID=860) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:21:56.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:21:56.952+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:21:56.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:22:00.065+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:22:02.434+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:22:02.432+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:22:02.776+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:22:02.775+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:22:04.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 7.706 seconds
+[2025-07-30T14:22:36.477+0000] {processor.py:161} INFO - Started process (PID=886) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:22:36.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:22:36.512+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:22:36.506+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:22:39.261+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:22:42.572+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:22:42.570+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:22:42.756+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:22:42.755+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:22:45.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.474 seconds
+[2025-07-30T14:23:18.093+0000] {processor.py:161} INFO - Started process (PID=912) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:23:18.097+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:23:18.104+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:23:18.102+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:23:20.338+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:23:25.253+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:23:25.250+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:23:25.544+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:23:25.543+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:23:29.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 11.444 seconds
+[2025-07-30T14:23:59.974+0000] {processor.py:161} INFO - Started process (PID=939) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:23:59.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:23:59.985+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:23:59.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:24:02.194+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:24:07.215+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:24:07.213+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:24:07.538+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:24:07.537+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:24:11.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 11.813 seconds
+[2025-07-30T14:24:43.445+0000] {processor.py:161} INFO - Started process (PID=965) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:24:43.450+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:24:43.459+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:24:43.457+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:24:45.330+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:24:48.649+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:24:48.647+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:24:49.164+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:24:49.164+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:24:52.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.080 seconds
+[2025-07-30T14:25:26.935+0000] {processor.py:161} INFO - Started process (PID=995) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:25:26.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:25:26.946+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:25:26.945+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:25:29.845+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:25:35.653+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:25:35.652+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:25:36.083+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:25:36.083+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:25:48.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 21.664 seconds
+[2025-07-30T14:26:20.129+0000] {processor.py:161} INFO - Started process (PID=1021) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:26:20.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:26:20.149+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:26:20.147+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:26:22.814+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:26:28.365+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:26:28.362+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:26:28.887+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:26:28.886+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:26:34.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 14.693 seconds
+[2025-07-30T14:27:07.156+0000] {processor.py:161} INFO - Started process (PID=1055) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:27:07.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:27:07.177+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:27:07.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:27:09.392+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:27:14.874+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:27:14.872+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:27:15.252+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:27:15.249+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:27:20.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 13.049 seconds
+[2025-07-30T14:27:53.645+0000] {processor.py:161} INFO - Started process (PID=1081) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:27:53.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:27:53.658+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:27:53.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:27:55.769+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:27:59.427+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:27:59.425+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:27:59.709+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:27:59.708+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:28:04.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 10.545 seconds
+[2025-07-30T14:28:34.558+0000] {processor.py:161} INFO - Started process (PID=1108) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:28:34.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:28:34.570+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:28:34.569+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:28:37.574+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:28:41.683+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:28:41.681+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:28:42.226+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:28:42.225+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:28:46.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 12.111 seconds
+[2025-07-30T14:29:18.498+0000] {processor.py:161} INFO - Started process (PID=1133) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:29:18.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:29:18.514+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:29:18.513+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:29:23.279+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:29:25.571+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:29:25.550+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:29:25.898+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:29:25.892+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:29:28.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 9.700 seconds
+[2025-07-30T14:29:59.144+0000] {processor.py:161} INFO - Started process (PID=1159) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:29:59.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:29:59.156+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:29:59.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:30:01.895+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:30:04.165+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:30:04.160+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:30:04.356+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:30:04.355+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:30:06.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 7.446 seconds
+[2025-07-30T14:30:37.350+0000] {processor.py:161} INFO - Started process (PID=1186) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:30:37.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:30:37.367+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:30:37.365+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:30:39.432+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:30:41.908+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:30:41.907+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:30:42.162+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:30:42.161+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:30:44.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 7.043 seconds
+[2025-07-30T14:31:15.039+0000] {processor.py:161} INFO - Started process (PID=1211) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:31:15.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:31:15.050+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:31:15.049+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:31:17.324+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:31:20.510+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:31:20.509+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:31:20.774+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:31:20.774+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:31:22.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 7.799 seconds
+[2025-07-30T14:31:53.377+0000] {processor.py:161} INFO - Started process (PID=1237) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:31:53.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:31:53.387+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:31:53.386+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:31:55.636+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:31:58.588+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:31:58.586+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:31:58.745+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:31:58.743+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:32:00.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 7.178 seconds
+[2025-07-30T14:32:31.023+0000] {processor.py:161} INFO - Started process (PID=1263) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:32:31.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:32:31.036+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:32:31.034+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:32:33.149+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:32:35.090+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:32:35.089+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:32:35.235+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:32:35.235+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:32:36.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 5.844 seconds
+[2025-07-30T14:33:09.342+0000] {processor.py:161} INFO - Started process (PID=1282) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:33:09.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:33:09.355+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:33:09.354+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:33:12.367+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:33:25.641+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:33:25.640+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:33:27.806+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:33:27.805+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:33:44.218+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 34.909 seconds
+[2025-07-30T14:34:17.535+0000] {processor.py:161} INFO - Started process (PID=1324) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:34:17.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:34:17.542+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:34:17.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:34:18.541+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:34:30.102+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:34:30.101+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:34:30.486+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:34:30.485+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:34:33.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 16.456 seconds
+[2025-07-30T14:35:04.713+0000] {processor.py:161} INFO - Started process (PID=1351) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:35:04.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:35:04.718+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:35:04.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:35:05.798+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:35:15.160+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:35:15.159+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:35:15.985+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:35:15.984+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:35:21.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 16.914 seconds
+[2025-07-30T14:35:52.532+0000] {processor.py:161} INFO - Started process (PID=1385) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:35:52.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:35:52.539+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:35:52.538+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:35:53.608+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:35:55.527+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:35:55.526+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:35:55.669+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:35:55.669+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:35:58.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 5.648 seconds
+[2025-07-30T14:38:09.430+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:38:09.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:38:09.439+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:38:09.438+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:38:10.666+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:38:12.898+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:38:12.897+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:38:13.153+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:38:13.153+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:38:14.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 5.491 seconds
+[2025-07-30T14:38:45.670+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:38:45.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:38:45.676+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:38:45.675+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:38:46.605+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:38:48.370+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:38:48.369+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:38:48.511+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:38:48.510+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:38:50.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 4.430 seconds
+[2025-07-30T14:39:20.218+0000] {processor.py:161} INFO - Started process (PID=266) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:39:20.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:39:20.223+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:39:20.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:39:21.118+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:39:23.315+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:39:23.315+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:39:23.469+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:39:23.469+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:39:25.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 5.055 seconds
+[2025-07-30T14:39:56.457+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:39:56.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:39:56.466+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:39:56.465+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:39:57.576+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:39:59.918+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:39:59.917+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:40:00.117+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:40:00.117+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:40:02.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 5.594 seconds
+[2025-07-30T14:40:32.176+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:40:32.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:40:32.182+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:40:32.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:40:33.134+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:40:35.354+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:40:35.353+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:40:35.474+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:40:35.473+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:40:40.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 8.217 seconds
+[2025-07-30T14:41:12.127+0000] {processor.py:161} INFO - Started process (PID=352) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:41:12.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:41:12.139+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:41:12.138+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:41:13.447+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:41:15.133+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:41:15.132+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:41:15.236+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:41:15.236+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:41:16.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 4.319 seconds
+[2025-07-30T14:41:47.795+0000] {processor.py:161} INFO - Started process (PID=378) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:41:47.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:41:47.803+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:41:47.802+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:41:49.138+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:41:50.773+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:41:50.772+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:41:50.908+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:41:50.908+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:41:53.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 6.130 seconds
+[2025-07-30T14:42:25.256+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:42:25.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:42:25.261+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:42:25.260+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:42:26.227+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:42:28.469+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:42:28.468+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:42:28.643+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:42:28.643+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:42:31.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 6.350 seconds
+[2025-07-30T14:43:01.894+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:43:01.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:43:01.899+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:43:01.899+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:43:02.848+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:43:04.668+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:43:04.667+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:43:04.820+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:43:04.819+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:43:06.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 4.826 seconds
+[2025-07-30T14:43:37.794+0000] {processor.py:161} INFO - Started process (PID=456) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:43:37.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:43:37.801+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:43:37.799+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:43:38.923+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:43:44.311+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:43:44.310+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:43:46.420+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:43:46.419+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:43:52.747+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 14.966 seconds
+[2025-07-30T14:44:23.401+0000] {processor.py:161} INFO - Started process (PID=490) to work on /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:44:23.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sequential_pipeline_dag.py for tasks to queue
+[2025-07-30T14:44:23.411+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:44:23.411+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:44:24.537+0000] {processor.py:840} INFO - DAG(s) 'sequential_scraping_pipeline' retrieved from /opt/airflow/dags/sequential_pipeline_dag.py
+[2025-07-30T14:44:26.182+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:44:26.181+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-07-30T14:44:26.312+0000] {logging_mixin.py:188} INFO - [2025-07-30T14:44:26.312+0000] {dag.py:3947} INFO - Setting next_dagrun for sequential_scraping_pipeline to None, run_after=None
+[2025-07-30T14:44:27.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sequential_pipeline_dag.py took 4.187 seconds

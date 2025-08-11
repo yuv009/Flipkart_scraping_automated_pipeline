@@ -1,0 +1,26 @@
+[2025-07-27T10:15:43.260+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:15:43.776+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_python_operator_decorator.ext_py_a scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:43.925+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_python_operator_decorator.ext_py_a scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:43.944+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:15:44.094+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonExternalDecoratedOperator): ext_py_a> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:15:44.293+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1286) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:15:44.360+0000] {standard_task_runner.py:64} INFO - Started process 1478 to run task
+[2025-07-27T10:15:44.313+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_branch_python_operator_decorator', 'ext_py_a', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '145', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_operator_decorator.py', '--cfg-path', '/tmp/tmplvwfujx4']
+[2025-07-27T10:15:44.393+0000] {standard_task_runner.py:91} INFO - Job 145: Subtask ext_py_a
+[2025-07-27T10:15:44.601+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:15:45.239+0000] {task_command.py:426} INFO - Running <TaskInstance: example_branch_python_operator_decorator.ext_py_a scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:15:46.376+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_branch_python_operator_decorator' AIRFLOW_CTX_TASK_ID='ext_py_a' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:15:46.448+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:15:55.538+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python /tmp/venv-calloxe2l4i0/script.py /tmp/venv-calloxe2l4i0/script.in /tmp/venv-calloxe2l4i0/script.out /tmp/venv-calloxe2l4i0/string_args.txt /tmp/venv-calloxe2l4i0/termination.log
+[2025-07-27T10:15:55.563+0000] {process_utils.py:187} INFO - Output:
+[2025-07-27T10:16:11.521+0000] {process_utils.py:191} INFO - /home/***/.local/lib/python3.12/site-packages/***/configuration.py:815 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:16:11.543+0000] {process_utils.py:191} INFO - /home/***/.local/lib/python3.12/site-packages/***/configuration.py:741 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:16:11.545+0000] {process_utils.py:191} INFO - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:16:15.148+0000] {process_utils.py:191} INFO - /home/***/.local/lib/python3.12/site-packages/***/models/base.py:72 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:16:19.924+0000] {process_utils.py:191} INFO - doing something in external Python
+[2025-07-27T10:16:24.085+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-27T10:16:24.086+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:16:24.107+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_python_operator_decorator, task_id=ext_py_a, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101543, end_date=20250727T101624
+[2025-07-27T10:16:25.652+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:16:25.733+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:16:25.743+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

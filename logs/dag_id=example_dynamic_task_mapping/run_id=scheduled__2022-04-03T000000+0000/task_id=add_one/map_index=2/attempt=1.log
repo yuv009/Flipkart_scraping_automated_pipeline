@@ -1,0 +1,3 @@
+[2025-07-27T10:17:10.311+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:17:11.058+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-07-27T10:17:11.060+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 143

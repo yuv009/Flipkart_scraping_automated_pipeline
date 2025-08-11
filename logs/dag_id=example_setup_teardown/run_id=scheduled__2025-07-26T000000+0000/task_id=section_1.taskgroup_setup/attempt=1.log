@@ -1,0 +1,22 @@
+[2025-07-27T10:15:10.691+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:15:11.492+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_setup_teardown.section_1.taskgroup_setup scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:11.828+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_setup_teardown.section_1.taskgroup_setup scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:15:11.876+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:15:12.145+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): section_1.taskgroup_setup> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:15:12.411+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1127) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:15:12.477+0000] {standard_task_runner.py:64} INFO - Started process 1270 to run task
+[2025-07-27T10:15:12.472+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_setup_teardown', 'section_1.taskgroup_setup', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_setup_teardown.py', '--cfg-path', '/tmp/tmpfqdoo7t9']
+[2025-07-27T10:15:12.500+0000] {standard_task_runner.py:91} INFO - Job 119: Subtask section_1.taskgroup_setup
+[2025-07-27T10:15:12.679+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:15:13.190+0000] {task_command.py:426} INFO - Running <TaskInstance: example_setup_teardown.section_1.taskgroup_setup scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:15:14.529+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_setup_teardown' AIRFLOW_CTX_TASK_ID='section_1.taskgroup_setup' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:15:14.540+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:15:14.570+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-07-27T10:15:14.617+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo 'Hello from taskgroup_setup'"]
+[2025-07-27T10:15:15.260+0000] {subprocess.py:86} INFO - Output:
+[2025-07-27T10:15:15.412+0000] {subprocess.py:93} INFO - Hello from taskgroup_setup
+[2025-07-27T10:15:15.430+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-27T10:15:15.442+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:15:15.643+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_setup_teardown, task_id=section_1.taskgroup_setup, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101511, end_date=20250727T101515
+[2025-07-27T10:15:16.434+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:15:16.630+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

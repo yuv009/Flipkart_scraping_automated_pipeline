@@ -1,0 +1,19 @@
+[2025-07-27T10:16:27.782+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:16:28.228+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-03-22T00:00:00+00:00 map_index=0 [queued]>
+[2025-07-27T10:16:28.374+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-03-22T00:00:00+00:00 map_index=0 [queued]>
+[2025-07-27T10:16:28.377+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:16:28.458+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): add_one> on 2022-03-22 00:00:00+00:00
+[2025-07-27T10:16:28.529+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1748) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:16:28.565+0000] {standard_task_runner.py:64} INFO - Started process 1910 to run task
+[2025-07-27T10:16:28.524+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_dynamic_task_mapping', 'add_one', 'scheduled__2022-03-22T00:00:00+00:00', '--job-id', '184', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_dynamic_task_mapping.py', '--cfg-path', '/tmp/tmpg3l0xsr5', '--map-index', '0']
+[2025-07-27T10:16:28.597+0000] {standard_task_runner.py:91} INFO - Job 184: Subtask add_one
+[2025-07-27T10:16:28.657+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:16:28.947+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-03-22T00:00:00+00:00 map_index=0 [running]> on host 4112a2618ff3
+[2025-07-27T10:16:29.516+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_dynamic_task_mapping' AIRFLOW_CTX_TASK_ID='add_one' AIRFLOW_CTX_EXECUTION_DATE='2022-03-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-03-22T00:00:00+00:00'
+[2025-07-27T10:16:29.520+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:16:29.542+0000] {python.py:237} INFO - Done. Returned value was: 2
+[2025-07-27T10:16:29.545+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:16:29.685+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dynamic_task_mapping, task_id=add_one, run_id=scheduled__2022-03-22T00:00:00+00:00, map_index=0, execution_date=20220322T000000, start_date=20250727T101628, end_date=20250727T101629
+[2025-07-27T10:16:29.965+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:16:30.146+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:16:30.160+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

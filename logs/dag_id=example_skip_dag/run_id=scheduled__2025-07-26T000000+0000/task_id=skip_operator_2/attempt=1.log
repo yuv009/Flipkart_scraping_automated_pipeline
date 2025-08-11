@@ -1,0 +1,18 @@
+[2025-07-27T10:14:00.775+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-27T10:14:01.110+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:14:01.225+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-07-26T00:00:00+00:00 [queued]>
+[2025-07-27T10:14:01.228+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-27T10:14:01.529+0000] {taskinstance.py:2330} INFO - Executing <Task(EmptySkipOperator): skip_operator_2> on 2025-07-26 00:00:00+00:00
+[2025-07-27T10:14:01.869+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_skip_dag', 'skip_operator_2', 'scheduled__2025-07-26T00:00:00+00:00', '--job-id', '59', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_skip_dag.py', '--cfg-path', '/tmp/tmpij9seyc9']
+[2025-07-27T10:14:01.892+0000] {standard_task_runner.py:91} INFO - Job 59: Subtask skip_operator_2
+[2025-07-27T10:14:01.944+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-27T10:14:01.908+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=637) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-27T10:14:01.963+0000] {standard_task_runner.py:64} INFO - Started process 765 to run task
+[2025-07-27T10:14:02.359+0000] {task_command.py:426} INFO - Running <TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-07-26T00:00:00+00:00 [running]> on host 4112a2618ff3
+[2025-07-27T10:14:02.841+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_skip_dag' AIRFLOW_CTX_TASK_ID='skip_operator_2' AIRFLOW_CTX_EXECUTION_DATE='2025-07-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-26T00:00:00+00:00'
+[2025-07-27T10:14:02.859+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-27T10:14:02.876+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-27T10:14:02.957+0000] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=example_skip_dag, task_id=skip_operator_2, run_id=scheduled__2025-07-26T00:00:00+00:00, execution_date=20250726T000000, start_date=20250727T101401, end_date=20250727T101402
+[2025-07-27T10:14:03.460+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-27T10:14:03.645+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-27T10:14:03.654+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,20 @@
+[2025-07-29T11:31:51.679+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-29T11:31:52.989+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.get_urls_from_config manual__2025-07-29T11:31:00.350406+00:00 [queued]>
+[2025-07-29T11:31:53.397+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sequential_scraping_pipeline.get_urls_from_config manual__2025-07-29T11:31:00.350406+00:00 [queued]>
+[2025-07-29T11:31:53.400+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-29T11:31:53.971+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): get_urls_from_config> on 2025-07-29 11:31:00.350406+00:00
+[2025-07-29T11:31:54.007+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1684) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-29T11:31:54.008+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'sequential_scraping_pipeline', 'get_urls_from_config', 'manual__2025-07-29T11:31:00.350406+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/sequential_pipeline_dag.py', '--cfg-path', '/tmp/tmpiy3umnp1']
+[2025-07-29T11:31:54.011+0000] {standard_task_runner.py:64} INFO - Started process 1703 to run task
+[2025-07-29T11:31:54.013+0000] {standard_task_runner.py:91} INFO - Job 117: Subtask get_urls_from_config
+[2025-07-29T11:31:55.167+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-29T11:31:58.255+0000] {task_command.py:426} INFO - Running <TaskInstance: sequential_scraping_pipeline.get_urls_from_config manual__2025-07-29T11:31:00.350406+00:00 [running]> on host dd044cea268d
+[2025-07-29T11:32:04.356+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='sequential_scraping_pipeline' AIRFLOW_CTX_TASK_ID='get_urls_from_config' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T11:31:00.350406+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-29T11:31:00.350406+00:00'
+[2025-07-29T11:32:04.366+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-29T11:32:04.370+0000] {logging_mixin.py:188} INFO - Processing 1 unique URLs.
+[2025-07-29T11:32:04.372+0000] {python.py:237} INFO - Done. Returned value was: ['https://www.flipkart.com/samsung-galaxy-s24-fe-5g-blue-128-gb/p/itme960199e26f23?pid=MOBH4ZG3Z5NCBW2H&fm=Search&ppt=dynamic&ppn=dynamic&ssid=73s6pyna3k0000001753785087652']
+[2025-07-29T11:32:04.374+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-29T11:32:06.610+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sequential_scraping_pipeline, task_id=get_urls_from_config, run_id=manual__2025-07-29T11:31:00.350406+00:00, execution_date=20250729T113100, start_date=20250729T113152, end_date=20250729T113206
+[2025-07-29T11:32:08.971+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-29T11:32:10.289+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-29T11:32:10.497+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
